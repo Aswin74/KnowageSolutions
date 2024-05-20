@@ -1,3 +1,0 @@
-Knowage Solution
-
-Aswin, Vaisakh
