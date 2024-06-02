@@ -1,3 +1,4 @@
 * tailwind
 * framer motion
-* react-router-dom
+* npm install react-router-dom
+* npm install scroll-lock
