@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-import { fontFamily } from "tailwindcss/defaultTheme"
-import plugin from "tailwindcss/plugin"
+import { fontFamily } from "tailwindcss/defaultTheme";
+import plugin from "tailwindcss/plugin";
 
 export default {
   content: [
@@ -11,6 +11,12 @@ export default {
   theme: {
     extend: {
       colors: {
+        ks: {
+          primary: "#007f5f",
+          secondary: "#bc4749",
+          white: "#f0efeb",
+          black: "#212529",
+        },
         color: {
           1: "#AC6AFF",
           2: "#FFC876",
@@ -85,7 +91,7 @@ export default {
   },
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities }) {
-      addBase({})
+      addBase({});
       addComponents({
         ".container": {
           "@apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem]":
@@ -131,12 +137,12 @@ export default {
         ".button": {
           "@apply font-code text-xs font-bold uppercase tracking-wider": {},
         },
-      })
+      });
       addUtilities({
         ".tap-highlight-color": {
           "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
         },
-      })
+      });
     }),
   ],
-}
+};

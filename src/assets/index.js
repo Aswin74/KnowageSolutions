@@ -1,3 +1,8 @@
+import logo from "./KS_icon.png";
+import darkLogo from "./KS_dark.png";
+import lightLogo from "./KS_light.png";
+import logoText from "./KS_WhiteText.png";
+
 import brainwave from "./brainwave.svg";
 import check from "./check.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
@@ -76,6 +81,10 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
 export {
+  logo,
+  darkLogo,
+  lightLogo,
+  logoText,
   brainwave,
   check,
   check2,
