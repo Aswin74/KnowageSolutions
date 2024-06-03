@@ -2,11 +2,11 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
-import Button from "../Button";
-import { navigation } from "../../constants";
+import Button from "./Button";
+import { navigation } from "../constants";
 
-import { logo } from "../../assets";
-import MenuSvg from "../../assets/svg/MenuSvg";
+import { logo } from "../assets";
+import MenuSvg from "../assets/svg/MenuSvg";
 
 function Navbar() {
   const currPath = useLocation();

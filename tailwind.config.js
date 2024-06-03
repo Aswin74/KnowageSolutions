@@ -26,7 +26,8 @@ export default {
           6: "#FF98E2",
         },
         stroke: {
-          1: "#26242C",
+          1: "#b8b8b870",
+          // 1: "#26242C",
         },
         n: {
           1: "#FFFFFF",
@@ -98,7 +99,7 @@ export default {
             {},
         },
         ".h1": {
-          "@apply font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem]":
+          "@apply font-semibold text-[3.75rem] leading-[4.25rem] md:text-[4rem] md:leading-[4.75rem] lg:text-[4.25rem] lg:leading-[5.0625rem] xl:text-[4.75rem] xl:leading-[5.5rem]":
             {},
         },
         ".h2": {
