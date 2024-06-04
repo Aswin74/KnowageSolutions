@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
+import { ScrollParallax } from "react-just-parallax";
+
 import Section from "../Section";
+import Button from "../Button";
 import { curve, darkLogo } from "../../assets";
+import {
+  BackgroundCircles,
+  BottomLine,
+  Gradient,
+} from "../../assets/design/BackgroudDesigns";
 
 const Hero = () => {
+  const parallaxRef = useRef(null);
+
   return (
     <Section
       id="hero"
@@ -18,23 +28,29 @@ const Hero = () => {
             <br />
             Study Abroad
             <br />
-            <span className="inline-block relative">
-              <img
-                src={darkLogo}
-                className="h-20 lg:h-28 -mt-6"
-                alt="Knowage International"
-              />
-              <img
-                src={curve}
-                className="absolute top-full left-0 w-full -mt-5 lg:-mt-8"
-                width={624}
-                height={28}
-                alt="curve"
-              />
-            </span>
+            <ScrollParallax>
+              <span className="inline-block relative">
+                <img
+                  src={darkLogo}
+                  className="h-20 lg:h-28 -mt-6"
+                  alt="Knowage International"
+                />
+                <img
+                  src={curve}
+                  className="absolute top-full left-0 w-full -mt-5 lg:-mt-8"
+                  width={624}
+                  height={28}
+                  alt="curve"
+                />
+              </span>
+            </ScrollParallax>
           </h1>
 
-          <p className="body-2">
+          <div className="relative max-w-[23rem] mx-auto md:max-w-5xl">
+            <BackgroundCircles />
+          </div>
+
+          <p className="body-1 max-w-4xl mx-auto mb-6 lg:mb-8">
             Knowage International is one of the Leading educational consultancy
             offering services all over India. We have a very rich experience in
             counselling student undergraduate and graduate level for 5 years to
@@ -42,6 +58,8 @@ const Hero = () => {
           </p>
         </div>
       </div>
+
+      <BottomLine />
     </Section>
   );
 };

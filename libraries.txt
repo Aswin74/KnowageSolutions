@@ -2,3 +2,4 @@
 * framer motion
 * npm install react-router-dom
 * npm install scroll-lock
+* install react-just-parallax

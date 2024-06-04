@@ -41,7 +41,7 @@ function Navbar() {
             className={`${
               isOpen ? "flex" : "hidden"
             } fixed top-[5rem] left-0 right-0 bottom-0 ${
-              !isOpen ? "bg-ks-white" : "bg-ks-white/70 backdrop-blur-sm z-1"
+              !isOpen ? "bg-ks-white" : "bg-ks-white/90 backdrop-blur-sm z-1"
             } lg:flex lg:static lg:mx-auto lg:bg-transparent`}
           >
             <div className="relative z-2 flex flex-col lg:flex-row items-center justify-center m-auto">
