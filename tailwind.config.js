@@ -26,8 +26,9 @@ export default {
           6: "#FF98E2",
         },
         stroke: {
-          1: "#b8b8b870",
+          gray: "#b8b8b870",
           // 1: "#26242C",
+          tint: "#d0e3f0",
         },
         n: {
           1: "#FFFFFF",

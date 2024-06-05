@@ -16,9 +16,8 @@ const Hero = () => {
   return (
     <Section
       id="hero"
-      className="pt-[12rem] -mt-[5.25rem]"
+      className="pt-[12rem] -mt-[5.25rem] h-screen"
       crosses
-      crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
     >
       <div className="container relative">
