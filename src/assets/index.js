@@ -32,14 +32,11 @@ import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
-import discord from "./collaboration/discord.png";
-import figma from "./collaboration/figma.png";
-import framer from "./collaboration/framer.png";
-import notion from "./collaboration/notion.png";
-import photoshop from "./collaboration/photoshop.png";
-import protopie from "./collaboration/protopie.png";
-import raindrop from "./collaboration/raindrop.png";
-import slack from "./collaboration/slack.png";
+import facebook from "./collaboration/facebook.png";
+import youtube from "./collaboration/youtube.png";
+import instagram from "./collaboration/instagram.png";
+import gmail from "./collaboration/gmail.png";
+import whatsapp from "./collaboration/whatsapp.png";
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
@@ -74,12 +71,6 @@ import benefitIcon3 from "./benefits/icon-3.svg";
 import benefitIcon4 from "./benefits/icon-4.svg";
 import benefitImage2 from "./benefits/image-2.png";
 
-import discordBlack from "./socials/discord.svg";
-import facebook from "./socials/facebook.svg";
-import instagram from "./socials/instagram.svg";
-import telegram from "./socials/telegram.svg";
-import twitter from "./socials/twitter.svg";
-
 export {
   logo,
   darkLogo,
@@ -112,14 +103,11 @@ export {
   heroBackground,
   curve1,
   curve2,
-  discord,
-  figma,
-  framer,
-  notion,
-  photoshop,
-  protopie,
-  raindrop,
-  slack,
+  facebook,
+  youtube,
+  instagram,
+  gmail,
+  whatsapp,
   service1,
   service2,
   service3,
@@ -148,9 +136,4 @@ export {
   benefitIcon3,
   benefitIcon4,
   benefitImage2,
-  discordBlack,
-  facebook,
-  instagram,
-  telegram,
-  twitter,
 };

@@ -29,7 +29,7 @@ const Card = ({ img, course }) => {
 const Courses = () => {
   return (
     <Section id="courses">
-      <div className="container flex flex-col items-center lg:mb-28">
+      <div className="container flex flex-col items-center mb-28">
         <Heading title="Courses Offered" />
 
         <div className="grid grid-cols-2 gap-2 lg:grid-cols-5">
