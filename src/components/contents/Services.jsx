@@ -30,7 +30,7 @@ const Services = () => {
       <div className="container relative z-2 mb-28">
         <Heading
           title="Our Free Services"
-          className="md:max-w-md lg:max-w-2xl"
+          className="mx-auto text-center md:max-w-md lg:max-w-2xl"
         />
 
         <div className="grid lg:grid-cols-2 gap-4">

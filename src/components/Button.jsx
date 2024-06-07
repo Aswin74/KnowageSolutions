@@ -1,6 +1,6 @@
 import ButtonSvg from "../assets/svg/ButtonSvg";
 
-const Button = ({ className, href, onClick, children, px, primary, red }) => {
+const Button = ({ className, href, onClick, children, px, primary }) => {
   const buttonClass = `group/button button h-11 relative inline-flex items-center justify-center text-ks-secondary/80 
   transition-colors hover:text-ks-secondary ${px || "px-7"} ${
     className || ""
