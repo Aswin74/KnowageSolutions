@@ -7,10 +7,10 @@ const ButtonSvg = (primary) => (
       viewBox="0 0 21 44"
     >
       <path
-        fill={primary ? "#007f5f" : "none"}
-        stroke={primary ? "#007f5f" : "url(#btn-left)"} // mentioned in ButtonGradient.jsx
+        fill={primary ? "#f0efeb" : "none"}
+        stroke={primary ? "#f0efeb" : "url(#btn-left)"} // mentioned in ButtonGradient.jsx
         strokeWidth="2"
-        d="M21,43.00005 L8.11111,43.00005 C4.18375,43.00005 1,39.58105 1,35.36365 L1,8.63637 C1,4.41892 4.18375,1 8.11111,1 L21,1"
+        d="M22,43.00005 L8.11111,43.00005 C4.18375,43.00005 1,39.58105 1,35.36365 L1,8.63637 C1,4.41892 4.18375,1 8.11111,1 L22,1"
       />
     </svg>
     <svg
@@ -18,11 +18,11 @@ const ButtonSvg = (primary) => (
       height="44"
       viewBox="0 0 100 44"
       preserveAspectRatio="none"
-      fill={primary ? "#007f5f" : "none"}
+      fill={primary ? "#f0efeb" : "none"}
     >
       {primary ? (
         <polygon
-          fill="#007f5f"
+          fill="#f0efeb"
           fillRule="nonzero"
           points="105 0 105 44 0 44 0 0"
         />
@@ -48,8 +48,8 @@ const ButtonSvg = (primary) => (
       viewBox="0 0 21 44"
     >
       <path
-        fill={primary ? "#007f5f" : "none"}
-        stroke={primary ? "#007f5f" : "url(#btn-right)"} // mentioned in ButtonGradient.jsx
+        fill={primary ? "#f0efeb" : "none"}
+        stroke={primary ? "#f0efeb" : "url(#btn-right)"} // mentioned in ButtonGradient.jsx
         strokeWidth="2"
         d="M0,43.00005 L12.88889,43.00005 C16.81625,43.00005 20,39.58105 20,35.36365 L20,8.63637 C20,4.41892 16.81625,1 12.88889,1 L0,1"
       />

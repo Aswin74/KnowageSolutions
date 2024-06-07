@@ -30,7 +30,7 @@ const Services = () => {
       <div className="container relative z-2 mb-28">
         <Heading
           title="Our Free Services"
-          className="md:max-w-md mb-14 lg:max-w-2xl"
+          className="md:max-w-md lg:max-w-2xl"
         />
 
         <div className="grid lg:grid-cols-2 gap-4">
@@ -87,12 +87,8 @@ max-w-[50rem] mx-auto */}
             </div>
 
             <div className="grid col-span-1 gap-4">
-              <Card img={smallSphere} title="Education Loan" className="lg:" />
-              <Card
-                img={smallSphere}
-                title="Carreer Guidance"
-                className="lg:"
-              />
+              <Card img={smallSphere} title="Education Loan" />
+              <Card img={smallSphere} title="Carreer Guidance" />
               <Card img={smallSphere} title="Full Support until Graduaion" />
               <Card img={smallSphere} title="Accomodation Assistance" />
             </div>
