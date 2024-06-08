@@ -30,13 +30,13 @@ import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 
-import curve1 from "./collaboration/curve-1.svg";
-import curve2 from "./collaboration/curve-2.svg";
-import facebook from "./collaboration/facebook.png";
-import youtube from "./collaboration/youtube.png";
-import instagram from "./collaboration/instagram.png";
-import gmail from "./collaboration/gmail.png";
-import whatsapp from "./collaboration/whatsapp.png";
+import curve1 from "./contact/curve-1.svg";
+import curve2 from "./contact/curve-2.svg";
+import facebook from "./contact/facebook.png";
+import youtube from "./contact/youtube.png";
+import instagram from "./contact/instagram.png";
+import gmail from "./contact/gmail.png";
+import whatsapp from "./contact/whatsapp.png";
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
