@@ -2,7 +2,6 @@ import React from "react";
 import Section from "../Section";
 import Heading from "../Heading";
 import { BottomLine } from "../../assets/design/BackgroudDesigns";
-import { service3 } from "../../assets";
 import Button from "../Button";
 
 const Card = ({ img, course }) => {
@@ -33,11 +32,11 @@ const Courses = () => {
         <Heading title="Courses Offered" />
 
         <div className="grid grid-cols-2 gap-2 lg:grid-cols-5">
-          <Card img={service3} course="Chakra control" />
-          <Card img={service3} course="Chakra control" />
-          <Card img={service3} course="Chakra control" />
-          <Card img={service3} course="Chakra control" />
-          <Card img={service3} course="Chakra control" />
+          <Card img="" course="Chakra control" alt="icon" />
+          <Card img="" course="Chakra control" alt="icon" />
+          <Card img="" course="Chakra control" alt="icon" />
+          <Card img="" course="Chakra control" alt="icon" />
+          <Card img="" course="Chakra control" alt="icon" />
         </div>
         <Button className="mt-6">View More</Button>
       </div>
