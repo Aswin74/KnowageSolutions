@@ -73,7 +73,7 @@ const Contact = () => {
                      index * 72
                    } hover:scale-110 active:shadow-lg active:shadow-stroke-tint transition-transform duration-200 `}
                   >
-                    <a href={app.url}>
+                    <a href={app.url} target="_blank">
                       <img
                         className="m-auto"
                         // height={20}

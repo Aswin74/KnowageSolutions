@@ -1,4 +1,5 @@
 import ButtonGradient from "./assets/svg/ButtonGradient";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 import Courses from "./components/contents/Courses";
@@ -15,6 +16,7 @@ function App() {
         <Services />
         <Courses />
         <Contact />
+        <Footer />
       </div>
 
       <ButtonGradient />

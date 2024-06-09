@@ -38,6 +38,14 @@ import instagram from "./contact/instagram.png";
 import gmail from "./contact/gmail.png";
 import whatsapp from "./contact/whatsapp.png";
 
+import fbSvg from "./socials/facebook.svg";
+import locationSvg from "./socials/location.svg";
+import instagramSvg from "./socials/instagram.svg";
+import gmailSvg from "./socials/gmail.svg";
+import youtubeSvg from "./socials/youtube.svg";
+import whatsappSvg from "./socials/whatsapp.svg";
+import phoneSvg from "./socials/phone.svg";
+
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
 import service3 from "./services/service-3.png";
@@ -136,4 +144,11 @@ export {
   benefitIcon3,
   benefitIcon4,
   benefitImage2,
+  fbSvg,
+  locationSvg,
+  instagramSvg,
+  gmailSvg,
+  youtubeSvg,
+  whatsappSvg,
+  phoneSvg,
 };
