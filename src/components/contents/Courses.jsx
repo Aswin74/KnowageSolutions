@@ -3,27 +3,8 @@ import Section from "../Section";
 import Heading from "../Heading";
 import { BottomLine } from "../../assets/design/BackgroudDesigns";
 import Button from "../Button";
-
-const Card = ({ img, course }) => {
-  // Reusable Card Component for below
-  return (
-    <div
-      className="h-52 w-52 p-[0.2rem] items-center bg-conic-gradient
-               rounded-xl overflow-hidden lg:h-60 lg:w-60"
-    >
-      <div
-        className="flex flex-col p-4 items-center justify-between w-full h-full 
-      bg-gradient-to-r from-ks-primary to-teal-800 text-ks-white rounded-xl hover:bg-gradient-to-l"
-      >
-        <img src={img} className="h-20 w-20 lg:h-24 lg:w-24 " alt="icon" />
-        <h6 className="h6  font-code font-semibold text-ks-white">{course}</h6>
-        <Button href="courses" primary>
-          Apply
-        </Button>
-      </div>
-    </div>
-  );
-};
+import Card from "../Card";
+import { courses } from "../../constants";
 
 const Courses = () => {
   return (
@@ -31,12 +12,15 @@ const Courses = () => {
       <div className="container flex flex-col items-center mb-28">
         <Heading title="Courses Offered" />
 
-        <div className="grid grid-cols-2 gap-2 lg:grid-cols-5">
-          <Card img="" course="Chakra control" alt="icon" />
-          <Card img="" course="Chakra control" alt="icon" />
-          <Card img="" course="Chakra control" alt="icon" />
-          <Card img="" course="Chakra control" alt="icon" />
-          <Card img="" course="Chakra control" alt="icon" />
+        <div className="grid grid-cols-2 gap-2 lg:grid-cols-4">
+          {courses.slice(0, 4).map((course) => (
+            <Card
+              id={course.id}
+              img={course.icon}
+              course={course.name}
+              alt={course.name}
+            />
+          ))}
         </div>
         <Button className="mt-6">View More</Button>
       </div>

@@ -12,6 +12,18 @@ import {
   youtube,
   youtubeSvg,
 } from "../assets";
+import {
+  Agriculture,
+  Ayurveda,
+  Dental,
+  Engineering,
+  HotelManagement,
+  Law,
+  Management,
+  Medical,
+  Pharmacy,
+  Physiotherapy,
+} from "../assets/courses";
 
 export const navigation = [
   {
@@ -83,6 +95,74 @@ export const contactApps = [
     icon: youtube,
     svg: youtubeSvg,
     url: "#youtube",
+  },
+];
+
+export const courses = [
+  {
+    id: 1,
+    name: "Medical",
+    icon: Medical,
+  },
+  {
+    id: 2,
+    name: "Dental",
+    icon: Dental,
+  },
+  {
+    id: 3,
+    name: "Ayurveda",
+    icon: Ayurveda,
+  },
+  {
+    id: 4,
+    name: "Agriculture",
+    icon: Agriculture,
+  },
+  {
+    id: 5,
+    name: "Pharm D",
+    icon: Pharmacy,
+  },
+  {
+    id: 6,
+    name: "Physiotherapy",
+    icon: Physiotherapy,
+  },
+  {
+    id: 7,
+    name: "BPharm",
+    icon: Pharmacy,
+  },
+  {
+    id: 8,
+    name: "Allied Health",
+    icon: Medical,
+  },
+  {
+    id: 9,
+    name: "Nursing",
+    icon: Medical,
+  },
+  {
+    id: 10,
+    name: "Engineering",
+    icon: Engineering,
+  },
+  {
+    id: 11,
+    name: "Management",
+    icon: Management,
+  },
+  {
+    id: 12,
+    name: "Hotel Management",
+    icon: HotelManagement,
+  },
+  {
+    id: 13,
+    name: "Law",
+    icon: Law,
   },
 ];
 
