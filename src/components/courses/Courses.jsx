@@ -15,7 +15,7 @@ const Courses = () => {
         <div className="grid grid-cols-2 gap-2 lg:grid-cols-4">
           {courses.slice(0, 4).map((course) => (
             <Card
-              id={course.id}
+              key={course.id}
               img={course.icon}
               course={course.name}
               alt={course.name}

@@ -5,7 +5,7 @@ const Card = ({ id, img, course }) => {
   return (
     <div
       id={id}
-      className="h-52 w-52 p-[0.2rem] items-center bg-conic-gradient
+      className="h-48 w-48 p-[0.2rem] items-center bg-conic-gradient
                rounded-xl overflow-hidden lg:h-60 lg:w-60"
     >
       <div

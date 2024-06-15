@@ -7,6 +7,7 @@ import gradient from "./gradient.png";
 import smallSphere from "./4-small.png";
 import plusSquare from "./plus-square.svg";
 import loading from "./loading.png";
+import bullet from "./bullet-point.svg";
 
 import curve from "./hero/curve.png";
 
@@ -38,6 +39,7 @@ export {
   smallSphere,
   plusSquare,
   loading,
+  bullet,
   curve,
   curve1,
   curve2,

@@ -3,9 +3,27 @@ import Section from "../../Section";
 import Heading from "../../Heading";
 import { BottomLine } from "../../../assets/design/BackgroudDesigns";
 import Button from "../../Button";
-import { logo } from "../../../assets";
+import { bullet, logo } from "../../../assets";
 import { contactApps } from "../../../constants";
 import { LeftCurve } from "../../../assets/design/ContactCurve";
+
+const QUESTIONS = [
+  {
+    text: "What to do after +2?",
+  },
+  {
+    text: "Which course should I pursue?",
+  },
+  {
+    text: "Which course is best for me?",
+  },
+  {
+    text: "What are the job scopes of each courses?",
+  },
+  {
+    text: "Which college should I select?",
+  },
+];
 
 const Contact = () => {
   return (
@@ -17,13 +35,15 @@ const Contact = () => {
             className="max-md:mx-auto max-md:text-center"
           />
 
-          <ul className="max-w-[22rem] mb-4">
-            <li>What to do after +2?</li>
-            <li>Which course should I pursue?</li>
-            <li>Which course is best for me?</li>
-            <li>What are the job scopes of each courses?</li>
-            <li>Which college should I select?</li>
-          </ul>
+          {/* <ul className="max-w-[24rem] mb-4">
+            {QUESTIONS.map((ques, index) => (
+              <li key={index} className="flex items-start leading-10">
+                <img src={bullet} className="mr-2" />
+                <span className="text-lg lg:text-xl ">{ques.text}</span>
+              </li>
+            ))}
+          </ul> */}
+
           <p className="mb-3">
             Don't have answers?
             <br />
@@ -35,10 +55,6 @@ const Contact = () => {
 
         {/* Contact Circle */}
         <div className="lg:ml-auto xl:w-[38rem]">
-          <p className="body-2 mb-4 md:mb-6  lg:mb-32 lg:mx-auto">
-            Connect Us via :{" "}
-          </p>
-
           <div
             className="relative left-1/2 flex w-[22rem] aspect-square border-2 border-stroke-tint 
             rounded-full -translate-x-1/2 scale-75 md:scale-100"

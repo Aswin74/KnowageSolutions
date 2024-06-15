@@ -45,18 +45,7 @@ export const navigation = [
     id: "3",
     title: "Contact Us",
     url: "#contact",
-  },
-  {
-    id: "4",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
-  },
-  {
-    id: "5",
-    title: "Sign in",
-    url: "#login",
-    onlyMobile: true,
+    onlyMobile: false,
   },
 ];
 
@@ -66,35 +55,35 @@ export const contactApps = [
     title: "facebook",
     icon: facebook,
     svg: fbSvg,
-    url: "#facebook",
+    url: "https://www.facebook.com/knowageinternational?mibextid=LqqJ4d",
   },
   {
     id: "1",
     title: "instagram",
     icon: instagram,
     svg: instagramSvg,
-    url: "#instagram",
+    url: "https://www.instagram.com/knowage_international/",
   },
   {
     id: "2",
     title: "whatsapp",
     icon: whatsapp,
     svg: whatsappSvg,
-    url: "#whatsapp",
+    url: "https://chat.whatsapp.com/E3Z7nttZDOu3haM4jHvYTB?fbclid=PAZXh0bgNhZW0CMTEAAaaffoztEMTcrZ3HBkLKMnlroP9LVN03vpuA7PSE5XNGbTLuLK7nRVXellY_aem_AbJnJKHo7HSMMLkqvsEpW1AXm3Ep3dG60W4tG7C3VVOkm7I259aFoBfBN2l9hufxQvj_y08psW_g7qKb0OKQmqMO",
   },
   {
     id: "3",
     title: "gmail",
     icon: gmail,
     svg: gmailSvg,
-    url: "#gmail",
+    url: "mailto:knowageinternational@gmail.com",
   },
   {
     id: "4",
     title: "youtube",
     icon: youtube,
     svg: youtubeSvg,
-    url: "#youtube",
+    url: "https://www.youtube.com/@knowage_international",
   },
 ];
 

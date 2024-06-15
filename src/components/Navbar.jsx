@@ -32,17 +32,23 @@ function Navbar() {
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-ks-white shadow-md">
         <div className="flex items-center justify-between px-5 lg:px-7.5">
-          <a href="#hero" className="block w-[12rem] lg:mr-8 ml-2">
-            <img src={logo} className="h-20" alt="Knowage Solutions" />
+          <a
+            href="#hero"
+            className="flex items-center i w-[12rem] lg:mr-8 ml-2"
+          >
+            <img src={logo} className="h-16 lg:h-20" alt="Knowage Solutions" />
+            <p className="text-ks-primary font-black uppercase -ml-2 lg:text-lg">
+              Knowage
+            </p>
           </a>
 
           {/* Responsive Navbar content */}
           <div
-            className={`${
+            className={`-mt-6 ${
               isOpen ? "flex" : "hidden"
             } fixed top-[5rem] left-0 right-0 bottom-0 ${
               !isOpen ? "bg-ks-white" : "bg-ks-white/90 backdrop-blur-sm z-1"
-            } lg:flex lg:static lg:mx-auto lg:bg-transparent`}
+            } lg:flex lg:static lg:m-auto lg:bg-transparent`}
           >
             <div className="relative z-2 flex flex-col lg:flex-row items-center justify-center m-auto">
               {navigation.map((item) => (
