@@ -29,22 +29,22 @@ export const navigation = [
   {
     id: "0",
     title: "Home",
-    url: "#hero",
+    url: "/",
   },
   {
     id: "1",
     title: "Services",
-    url: "#services",
+    url: "/services",
   },
   {
     id: "2",
     title: "Courses",
-    url: "#courses",
+    url: "/courses",
   },
   {
     id: "3",
     title: "Contact Us",
-    url: "#contact",
+    url: "/contact",
     onlyMobile: false,
   },
 ];
@@ -178,6 +178,6 @@ export const address = [
     title: "mail",
     icon: gmailSvg,
     text: "mail",
-    url: "#mail",
+    url: "mailto:knowageinternational@gmail.com",
   },
 ];

@@ -38,7 +38,7 @@ const Card = ({ className, img, title, text }) => {
 
 const Services = () => {
   return (
-    <Section id="services">
+    <Section crosses id="services">
       <div className="container relative z-2 mb-28">
         <Heading
           title="Our Free Services"

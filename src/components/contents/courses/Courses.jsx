@@ -1,10 +1,10 @@
 import React from "react";
-import Section from "../Section";
-import Heading from "../Heading";
-import { BottomLine } from "../../assets/design/BackgroudDesigns";
-import Button from "../Button";
-import Card from "../Card";
-import { courses } from "../../constants";
+import Section from "../../Section";
+import Heading from "../../Heading";
+import { BottomLine } from "../../../assets/design/BackgroudDesigns";
+import Button from "../../Button";
+import Card from "../../Card";
+import { courses } from "../../../constants";
 
 const Courses = () => {
   return (
@@ -13,7 +13,7 @@ const Courses = () => {
         <Heading title="Courses Offered" />
 
         <div className="grid grid-cols-2 gap-2 lg:grid-cols-4">
-          {courses.slice(0, 4).map((course) => (
+          {courses.map((course) => (
             <Card
               key={course.id}
               img={course.icon}

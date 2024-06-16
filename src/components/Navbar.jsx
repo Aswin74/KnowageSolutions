@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import Button from "./Button";
@@ -9,8 +9,6 @@ import { logo } from "../assets";
 import MenuSvg from "../assets/svg/MenuSvg";
 
 function Navbar() {
-  const currPath = useLocation();
-
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -52,20 +50,22 @@ function Navbar() {
           >
             <div className="relative z-2 flex flex-col lg:flex-row items-center justify-center m-auto">
               {navigation.map((item) => (
-                <a
+                <NavLink
                   key={item.id}
-                  href={item.url}
-                  className={`block relative font-code uppercase transition-colors hover:text-ks-primary ${
-                    item.onlyMobile ? "lg:hidden" : ""
-                  } p-6 lg:-mr-0.25 lg:text-sm ${
-                    item.url === currPath.hash
-                      ? "z-2 text-ks-primary font-extrabold"
-                      : "text-ks-primary/60  font-semibold"
-                  } lg:leading-5`}
+                  to={item.url}
+                  className={({ isActive }) =>
+                    `block relative font-code uppercase transition-colors hover:text-ks-primary ${
+                      item.onlyMobile ? "lg:hidden" : ""
+                    } p-6 lg:-mr-0.25 lg:text-sm ${
+                      isActive
+                        ? "z-2 text-ks-primary font-extrabold"
+                        : "text-ks-primary/60  font-semibold"
+                    } lg:leading-5`
+                  }
                   onClick={handleNavClick}
                 >
                   {item.title}
-                </a>
+                </NavLink>
               ))}
             </div>
           </div>

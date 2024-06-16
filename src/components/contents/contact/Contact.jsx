@@ -35,14 +35,14 @@ const Contact = () => {
             className="max-md:mx-auto max-md:text-center"
           />
 
-          {/* <ul className="max-w-[24rem] mb-4">
+          <ul className="max-w-[24rem] mb-4">
             {QUESTIONS.map((ques, index) => (
               <li key={index} className="flex items-start leading-10">
                 <img src={bullet} className="mr-2" />
                 <span className="text-lg lg:text-xl ">{ques.text}</span>
               </li>
             ))}
-          </ul> */}
+          </ul>
 
           <p className="mb-3">
             Don't have answers?
