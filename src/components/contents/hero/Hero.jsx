@@ -16,7 +16,7 @@ const Hero = () => {
 
   return (
     <>
-      <Section
+      {/* <Section
         id="hero"
         className="pt-[12rem] -mt-[5.25rem] h-screen"
         crosses
@@ -60,8 +60,16 @@ const Hero = () => {
             </p>
           </div>
         </div>
-      </Section>
+      </Section> */}
 
+      <section className="h-[100vh] flex flex-col justify-center items-center bg-poly-grid bg-cover">
+        <h1 className=" text-ks-white text-6xl md:text-8xl lg:text-9xl">
+          KNOWAGE
+        </h1>
+        <p className="text-ks-secondary tracking-tagline font-serif font-extrabold text-lg md:text-3xl lg:text-4xl">
+          I&nbsp;N&nbsp;T&nbsp;E&nbsp;R&nbsp;N&nbsp;A&nbsp;T&nbsp;I&nbsp;O&nbsp;N&nbsp;A&nbsp;L
+        </p>
+      </section>
       <Services />
     </>
   );

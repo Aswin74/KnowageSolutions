@@ -9,6 +9,8 @@ import plusSquare from "./plus-square.svg";
 import loading from "./loading.png";
 import bullet from "./bullet-point.svg";
 
+import polygrid from "./Poly_Grid.svg";
+
 import curve from "./hero/curve.png";
 
 import curve1 from "./contact/curve-1.svg";
@@ -40,6 +42,7 @@ export {
   plusSquare,
   loading,
   bullet,
+  polygrid,
   curve,
   curve1,
   curve2,

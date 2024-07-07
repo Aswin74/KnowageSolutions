@@ -8,16 +8,18 @@ import Courses from "./components/contents/courses/Courses";
 import Contact from "./components/contents/contact/Contact";
 
 import ButtonGradient from "./assets/svg/ButtonGradient";
+import Register from "./components/contents/register/Register";
 
 function App() {
   return (
     <>
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+      <div className=" overflow-hidden">
         <Navbar />
         <Routes>
           <Route index element={<Hero />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
 
         <Footer />

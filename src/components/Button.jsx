@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import ButtonSvg from "../assets/svg/ButtonSvg";
 
-const Button = ({ className, href, onClick, children, px, primary }) => {
+const Button = ({ className, to, onClick, children, px, primary }) => {
   const buttonClass = `group/button button h-11 relative inline-flex items-center justify-center text-ks-secondary/80 
   transition-colors hover:text-ks-secondary ${px || "px-7"} ${
     className || ""
@@ -18,13 +19,13 @@ const Button = ({ className, href, onClick, children, px, primary }) => {
   );
 
   const renderLink = () => (
-    <a href={href} className={buttonClass}>
+    <Link to={to} className={buttonClass}>
       <span className={childrenClass}>{children}</span>
       {ButtonSvg(primary)}
-    </a>
+    </Link>
   );
 
-  return href ? renderLink() : renderButton();
+  return to ? renderLink() : renderButton();
 };
 
 export default Button;
