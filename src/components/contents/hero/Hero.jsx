@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
 import { ScrollParallax } from "react-just-parallax";
 
 import Section from "../../Section";
@@ -63,12 +64,35 @@ const Hero = () => {
       </Section> */}
 
       <section className="h-[100vh] flex flex-col justify-center items-center bg-poly-grid bg-cover">
-        <h1 className=" text-ks-white text-6xl md:text-8xl lg:text-9xl">
-          KNOWAGE
-        </h1>
-        <p className="text-ks-secondary tracking-tagline font-serif font-extrabold text-lg md:text-3xl lg:text-4xl">
+        <motion.h1 className=" text-ks-white text-6xl md:text-8xl lg:text-9xl">
+          {"KNOWAGE".split("").map((l, i) => {
+            return (
+              <motion.span
+                key={i}
+                initial={{ y: -200, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  duration: 0.25 * (i + 1),
+                  delay: 1,
+                }}
+                className="inline-block overflow-hidden"
+              >
+                {l}
+              </motion.span>
+            );
+          })}
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          transition={{
+            duration: 3,
+            delay: 2,
+          }}
+          animate={{ opacity: 1 }}
+          className="text-ks-secondary tracking-tagline font-serif font-extrabold text-lg md:text-3xl lg:text-4xl"
+        >
           I&nbsp;N&nbsp;T&nbsp;E&nbsp;R&nbsp;N&nbsp;A&nbsp;T&nbsp;I&nbsp;O&nbsp;N&nbsp;A&nbsp;L
-        </p>
+        </motion.p>
       </section>
       <Services />
     </>
