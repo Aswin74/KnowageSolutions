@@ -51,6 +51,7 @@ export default {
         sans: ["var(--font-sora)", ...fontFamily.sans],
         code: "var(--font-code)",
         grotesk: "var(--font-grotesk)",
+        inter: "var(--font-inter) ",
       },
       letterSpacing: {
         tagline: ".15em",
@@ -84,6 +85,7 @@ export default {
         "conic-gradient":
           "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
         "poly-grid": "url('./src/assets/Poly_Grid.svg')",
+        graduation: "url('./src/assets/hero/graduation_silhoutte.jpg')",
       },
     },
   },
