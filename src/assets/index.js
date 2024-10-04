@@ -32,6 +32,8 @@ import phoneSvg from "./socials/phone.svg";
 import lines from "./extras/lines.svg";
 import stars from "./extras/stars.svg";
 
+import girl from "./hero/gradGirl.jpg"
+
 export {
   logo,
   darkLogo,
@@ -60,4 +62,5 @@ export {
   youtubeSvg,
   whatsappSvg,
   phoneSvg,
+  girl
 };

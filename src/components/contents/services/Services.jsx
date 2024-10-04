@@ -1,8 +1,8 @@
-import React from "react";
-import Section from "../../Section";
-import Heading from "../../Heading";
+import React from "react"
+import Section from "../../Section"
+import Heading from "../../Heading"
 
-import { BottomLine } from "../../../assets/design/BackgroudDesigns";
+import { BottomLine } from "../../../assets/design/BackgroudDesigns"
 import {
   Accomodation,
   Admission,
@@ -14,7 +14,7 @@ import {
   Loan,
   Placement,
   Scholarship,
-} from "../../../assets/services";
+} from "../../../assets/services"
 
 const Card = ({ className, img, title, text }) => {
   // Reusable Card Component for below
@@ -29,87 +29,91 @@ const Card = ({ className, img, title, text }) => {
         alt="icon"
       />
       <div className="block">
-        <h5 className="h5 font-code font-semibold text-ks-primary">{title}</h5>
-        {text && <p className="body-2 max-w-72">{text}</p>}
+        <h5 className="h5 font-code font-semibold text-ks-secondary">
+          {title}
+        </h5>
+        {text && <p className="body-2 text-ks-white max-w-72">{text}</p>}
       </div>
     </div>
-  );
-};
+  )
+}
 
 const Services = () => {
   return (
-    <Section crosses id="services">
-      <div className="container relative z-2 mb-28">
-        <Heading
-          title="Our Free Services"
-          className="mx-auto text-center md:max-w-md lg:max-w-2xl"
-        />
+    <div className="bg-university2 bg-cover">
+      <Section className="bg-ks-primary_dark/70">
+        <div className="container relative z-2 mb-28">
+          <Heading
+            title="Our Free Services"
+            className="mx-auto text-center text-ks-white md:max-w-md lg:max-w-2xl"
+          />
 
-        <div className="grid lg:grid-cols-2 gap-4">
-          {/* Service Bento Grid 1 */}
-          {/* max-w-[50rem] mx-auto
+          <div className="grid lg:grid-cols-2 gap-4">
+            {/* Service Bento Grid 1 */}
+            {/* max-w-[50rem] mx-auto
 max-w-[50rem] mx-auto */}
-          <div className="grid grid-cols-1 gap-4 mb-4 lg:grid-cols-3">
-            <Card
-              img={Admission}
-              title="College Admission"
-              className="col-span-1 lg:h-64 lg:flex-col lg:justify-evenly lg:text-center"
-            />
-
-            <div className="grid col-span-2 gap-4">
+            <div className="grid grid-cols-1 gap-4 mb-4 lg:grid-cols-3">
               <Card
-                img={Course}
-                title="Course Selection"
-                className="lg:h-[7.5rem]"
+                img={Admission}
+                title="College Admission"
+                className="col-span-1 lg:h-64 lg:flex-col lg:justify-evenly lg:text-center"
               />
+
+              <div className="grid col-span-2 gap-4">
+                <Card
+                  img={Course}
+                  title="Course Selection"
+                  className="lg:h-[7.5rem]"
+                />
+                <Card
+                  img={College}
+                  title="College Selection"
+                  className="lg:h-[7.5rem]"
+                />
+              </div>
+
+              <Card
+                img={Scholarship}
+                title="Scholarship"
+                text="Ranging from ₹10,000 to ₹1,00,000 for all students who join through us."
+                className="col-span-2 lg:h-56"
+              />
+
               <Card
                 img={College}
-                title="College Selection"
-                className="lg:h-[7.5rem]"
+                title="Free College Visit"
+                className="col-span-1 lg:h-56 lg:flex-col lg:text-center"
               />
             </div>
 
-            <Card
-              img={Scholarship}
-              title="Scholarship"
-              text="Ranging from ₹10,000 to ₹1,00,000 for all students who join through us."
-              className="col-span-2 lg:h-56"
-            />
+            {/* Bento Grid 2 */}
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+              <div className="grid col-span-1 gap-4">
+                <Card
+                  img={Job}
+                  title="Part Time Job Assistance"
+                  className="row-span-2 lg:h-64"
+                />
+                <Card
+                  img={Placement}
+                  title="Placement Assistance"
+                  className="row-span-2 lg:h-64"
+                />
+              </div>
 
-            <Card
-              img={College}
-              title="Free College Visit"
-              className="col-span-1 lg:h-56 lg:flex-col lg:text-center"
-            />
-          </div>
-
-          {/* Bento Grid 2 */}
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-            <div className="grid col-span-1 gap-4">
-              <Card
-                img={Job}
-                title="Part Time Job Assistance"
-                className="row-span-2 lg:h-64"
-              />
-              <Card
-                img={Placement}
-                title="Placement Assistance"
-                className="row-span-2 lg:h-64"
-              />
-            </div>
-
-            <div className="grid col-span-1 gap-4">
-              <Card img={Loan} title="Education Loan" />
-              <Card img={Guidance} title="Carreer Guidance" />
-              <Card img={Graduation} title="Full Support until Graduaion" />
-              <Card img={Accomodation} title="Accomodation Assistance" />
+              <div className="grid col-span-1 gap-4">
+                <Card img={Loan} title="Education Loan" />
+                <Card img={Guidance} title="Carreer Guidance" />
+                <Card img={Graduation} title="Full Support until Graduaion" />
+                <Card img={Accomodation} title="Accomodation Assistance" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <BottomLine />
-    </Section>
-  );
-};
+        <BottomLine />
+      </Section>
+    </div>
+  )
+}
 
-export default Services;
+export default Services

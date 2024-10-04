@@ -1,58 +1,58 @@
-import { useEffect, useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react"
+import { Link, NavLink, useLocation } from "react-router-dom"
 
-import { disablePageScroll, enablePageScroll } from "scroll-lock";
-import { motion } from "framer-motion";
+import { disablePageScroll, enablePageScroll } from "scroll-lock"
+import { motion } from "framer-motion"
 
-import Button from "./Button";
-import { navigation } from "../constants";
+import Button from "./Button"
+import { navigation } from "../constants"
 
-import { logo } from "../assets";
-import MenuSvg from "../assets/svg/MenuSvg";
+import { logo } from "../assets"
+import MenuSvg from "../assets/svg/MenuSvg"
 
 function Navbar() {
-  const currentLocation = useLocation();
-  const currPath = currentLocation.pathname;
+  const currentLocation = useLocation()
+  const currPath = currentLocation.pathname
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const handleToggle = () => {
     if (isOpen) {
-      setIsOpen(false);
-      enablePageScroll();
+      setIsOpen(false)
+      enablePageScroll()
     } else {
-      setIsOpen(true);
-      disablePageScroll();
+      setIsOpen(true)
+      disablePageScroll()
     }
-  };
+  }
   // Nav Item Click
   const handleNavClick = () => {
-    enablePageScroll();
-    setIsOpen(false);
-  };
+    enablePageScroll()
+    setIsOpen(false)
+  }
 
   // Nav Bg Change on Scroll
-  const [navChange, setNavChange] = useState(true);
+  const [navChange, setNavChange] = useState(true)
 
   const changeBackground = () => {
     {
-      window.scrollY >= 80 ? setNavChange(true) : setNavChange(false);
+      window.scrollY >= 80 ? setNavChange(true) : setNavChange(false)
     }
-  };
+  }
 
   useEffect(() => {
     if (currPath == "/") {
-      changeBackground();
-      window.addEventListener("scroll", changeBackground);
-      setNavChange(false);
-      console.log("Hey Its home");
+      changeBackground()
+      window.addEventListener("scroll", changeBackground)
+      setNavChange(false)
+      console.log("Hey Its home")
     } else {
-      setNavChange(true);
+      setNavChange(true)
     }
     return () => {
-      window.removeEventListener("scroll", changeBackground);
-    };
-  }, [currPath]);
+      window.removeEventListener("scroll", changeBackground)
+    }
+  }, [currPath])
 
   return (
     <>
@@ -125,7 +125,7 @@ function Navbar() {
         </div>
       </motion.nav>
     </>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar
