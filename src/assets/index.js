@@ -33,6 +33,7 @@ import lines from "./extras/lines.svg";
 import stars from "./extras/stars.svg";
 
 import girl from "./hero/gradGirl.jpg"
+import pngGrad from "./hero/pngGrad.png"
 
 export {
   logo,
@@ -62,5 +63,6 @@ export {
   youtubeSvg,
   whatsappSvg,
   phoneSvg,
-  girl
+  girl,
+  pngGrad
 };

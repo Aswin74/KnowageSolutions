@@ -45,7 +45,6 @@ function Navbar() {
       changeBackground()
       window.addEventListener("scroll", changeBackground)
       setNavChange(false)
-      console.log("Hey Its home")
     } else {
       setNavChange(true)
     }
@@ -58,8 +57,8 @@ function Navbar() {
     <>
       <motion.nav
         className={`fixed top-0 left-0 right-0 z-50 ${
-          navChange ? "bg-ks-white" : "bg-transparent"
-        } shadow-md transition-all`}
+          navChange ? "bg-ks-white shadow-md" : "bg-transparent"
+        }  transition-all`}
       >
         <div className="flex items-center justify-between px-5 lg:px-7.5">
           <Link to="/" className="flex items-center w-[12rem] lg:mr-8 ml-2">

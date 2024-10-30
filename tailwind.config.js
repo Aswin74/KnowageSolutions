@@ -12,10 +12,13 @@ export default {
     extend: {
       colors: {
         ks: {
-          primary: "#007f5f",
+          // primary: "#007f5f",
+          primary:"#10B981",
           primary_dark: "#001b15",
-          secondary: "#bc4749",
-          white: "#f0efeb",
+          // secondary: "#bc4749",
+          // white: "#f0efeb",
+          secondary:"#FACC15",
+          white:"#f4f4f5",
           black: "#212529",
         },
         color: {
