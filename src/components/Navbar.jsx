@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 import Button from "./Button"
 import { navigation } from "../constants"
 
-import { logo } from "../assets"
+import { darkLogo, lightLogo } from "../assets"
 import MenuSvg from "../assets/svg/MenuSvg"
 
 function Navbar() {
@@ -60,16 +60,24 @@ function Navbar() {
           navChange ? "bg-ks-white shadow-md" : "bg-transparent"
         }  transition-all`}
       >
-        <div className="flex items-center justify-between px-5 lg:px-7.5">
-          <Link to="/" className="flex items-center w-[12rem] lg:mr-8 ml-2">
-            <img src={logo} className="h-16 lg:h-20" alt="Knowage Solutions" />
-            <p
+        <div
+          className={`flex items-center justify-between px-5 lg:px-7.5 ${
+            !navChange ? "bg-gradient-to-b from-emerald-400/80" : ""
+          }`}
+        >
+          <Link to="/" className="flex items-center  lg:mr-8 ml-2">
+            <img
+              src={navChange ? darkLogo : lightLogo}
+              className={`${navChange ? "h-16 lg:h-20" : "h-20 lg:h-24"}`}
+              alt="Knowage Solutions"
+            />
+            {/* <p
               className={`${
                 !navChange ? "text-ks-white" : "text-ks-primary"
               } font-black uppercase -ml-2 lg:text-lg`}
             >
               Knowage
-            </p>
+            </p> */}
           </Link>
 
           {/* Responsive Navbar content */}
@@ -90,17 +98,19 @@ function Navbar() {
                   key={item.id}
                   to={item.url}
                   className={({ isActive }) =>
-                    `block relative font-code uppercase transition-colors hover:text-ks-primary ${
+                    `block relative font-code uppercase transition-colors ${
                       item.onlyMobile ? "lg:hidden" : ""
-                    } p-6 lg:-mr-0.25 lg:text-sm ${
+                    } lg:px-6 max-md:p-6 lg:-mr-0.25 lg:text-sm ${
                       isActive
                         ? `z-2 ${
-                            !navChange ? "text-ks-white" : "text-ks-primary"
+                            !navChange
+                              ? "text-ks-primary bg-ks-white rounded py-2"
+                              : "text-ks-white  bg-ks-primary rounded py-2"
                           } font-extrabold`
                         : `${
                             !navChange
-                              ? " text-ks-white/60"
-                              : "text-ks-primary/60"
+                              ? " text-ks-white/60  hover:text-ks-white"
+                              : "text-ks-primary/60  hover:text-ks-primary"
                           }  font-semibold`
                     } lg:leading-5`
                   }
