@@ -27,11 +27,24 @@ const Hero = () => {
 
   return (
     <>
-      <div className="relative h-[100dvh] w-[100dvw] overflow-hidden bg-ks-primary">
-        <div className="grid md:grid-cols-2">
-          <div className="grid grid-cols-1">
-            <h1>ajsda</h1>
+      <div className="relative lg:h-[100dvh] w-[100dvw] overflow-hidden bg-ks-primary">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          {/* Text */}
+          <div className="max-lg:h-[100dvh] place-content-center pl-10">
+            <h1 className="uppercase mb-3 text-[3rem] lg:text-[4.5rem] leading-[3rem] lg:leading-[5rem] font-semibold text-ks-white ">
+              Study&nbsp;in&nbsp;
+              <span className="text-ks-secondary">India</span>,
+              <br />
+              <span className="text-ks-secondary">Study</span>&nbsp;Abroad
+            </h1>
+
+            <p className="body-1 text-balance text-ks-white/90 mx-auto">
+              We provide best universities / colleges with Affiliation,
+              Accrediation and all Approvals. 100% Placements and Internships.
+            </p>
           </div>
+
+          {/* 3D section */}
           <div className="grid grid-cols-1">
             <Hero3D />
           </div>
