@@ -2,6 +2,7 @@ import logo from "./KS_icon.png";
 import darkLogo from "./KS_dark.png";
 import lightLogo from "./KS_light.png";
 import logoText from "./KS_WhiteText.png";
+import logoRound from "./KS_round.png"
 
 import gradient from "./gradient.png";
 import smallSphere from "./4-small.png";
@@ -40,6 +41,7 @@ export {
   darkLogo,
   lightLogo,
   logoText,
+  logoRound,
   gradient,
   smallSphere,
   plusSquare,

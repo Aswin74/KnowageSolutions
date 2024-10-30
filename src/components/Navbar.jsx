@@ -68,8 +68,10 @@ function Navbar() {
           <Link to="/" className="flex items-center  lg:mr-8 ml-2">
             <img
               src={navChange ? darkLogo : lightLogo}
-              className={`${navChange ? "h-16 lg:h-20" : "h-20 lg:h-24"}`}
-              alt="Knowage Solutions"
+              className={`pointer-events-none ${
+                navChange ? "h-16 lg:h-20" : "h-20 lg:h-28"
+              }`}
+              alt="Knowage International"
             />
             {/* <p
               className={`${
