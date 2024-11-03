@@ -126,7 +126,7 @@ function Navbar() {
           </div>
 
           <div>
-            <Button to="/register" className="uppercase mr-2">
+            <Button to="/register" className="hidden lg:flex uppercase mr-2">
               Register
             </Button>
 

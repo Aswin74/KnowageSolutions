@@ -12,6 +12,7 @@ import {
 } from "../../../assets/design/BackgroudDesigns"
 import Services from "../services/Services"
 import Hero3D from "./Hero3D"
+import Counter from "./Counter"
 
 const Hero = () => {
   const parallaxRef = useRef(null)
@@ -42,6 +43,10 @@ const Hero = () => {
               We provide best universities / colleges with Affiliation,
               Accrediation and all Approvals. 100% Placements and Internships.
             </p>
+
+            <Button to="/courses" px="px-16 lg:px-20" className="mt-4">
+              See Courses
+            </Button>
           </div>
 
           {/* 3D section */}
@@ -50,7 +55,11 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="h-[100vh]" />
+
+      <div className="">
+        <Counter />
+      </div>
+      <div className="h-[100vh] bg-ks-gray" />
     </>
   )
 }

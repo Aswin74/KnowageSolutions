@@ -43,10 +43,21 @@ export const navigation = [
   },
   {
     id: "3",
-    title: "Contact Us",
-    url: "/contact",
+    title: "About",
+    url: "/about",
     onlyMobile: false,
   },
+  {
+    id:"4",
+    title:"Contact",
+    url:"/contact",
+  },
+  {
+    id:"5",
+    title:"Register",
+    url:"/register",
+    onlyMobile:true
+  }
 ];
 
 export const contactApps = [
@@ -86,6 +97,20 @@ export const contactApps = [
     url: "https://www.youtube.com/@knowage_international",
   },
 ];
+
+export const counters =[{
+  id:1,
+  num: 100,
+  title: "Universities"
+},{
+  id:2,
+  num: 800,
+  title: "Courses"
+},{
+  id:3,
+  num: 1000,
+  title: "Colleges"
+},]
 
 export const courses = [
   {
