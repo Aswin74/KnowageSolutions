@@ -19,6 +19,10 @@ const Counter = () => {
               setIsVisible(true)
               spring.set(item.num)
             }
+            // else {
+            //   setIsVisible(false)
+            //   spring.set(0)
+            // }
           })
         }
 

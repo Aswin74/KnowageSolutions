@@ -90,7 +90,9 @@ export default {
           "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
         "poly-grid": "url('./src/assets/Poly_Grid.svg')",
         university: "url('./src/assets/hero/university.png')",
-        university2:"url('./src/assets/hero/university2.jpg')"
+        university2:"url('./src/assets/hero/university2.jpg')",
+        waveBg : "url('./src/assets/courses/nonSvg/WaveBg.jpg')",
+        waveLg : "url('./src/assets/courses/nonSvg/WaveLg.jpg')",
       },
     },
   },
