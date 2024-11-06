@@ -22,6 +22,16 @@
   body {
     @apply font-inter bg-ks-white text-ks-black text-base;
   }
+  ::-webkit-scrollbar{
+    @apply bg-ks-primary;
+    /* box-shadow: 0 0 5px #f0efeb inset; */
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    @apply bg-ks-secondary;
+    border-radius: 10px;
+  }
 }
 
 .rotate-72 {

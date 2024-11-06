@@ -214,19 +214,19 @@ export const address = [
     {
         title: "phone1",
         icon: phoneSvg,
-        text: "phone1",
-        url: "#phone1",
+        text: "+91 9035015369",
+        url: "tel:+919035015369",
     },
     {
         title: "phone1",
         icon: phoneSvg,
-        text: "phone1",
-        url: "#phone1",
+        text: "+91 7736201864",
+        url: "tel:+917736201864",
     },
     {
         title: "mail",
         icon: gmailSvg,
-        text: "mail",
+        text: "knowageinternational@gmail.com",
         url: "mailto:knowageinternational@gmail.com",
     },
 ]
