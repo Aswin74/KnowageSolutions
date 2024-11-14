@@ -13,8 +13,8 @@ export default {
             colors: {
                 ks: {
                     // primary: "#007f5f",
-                    primary: "#10B981",
-                    primary_dark: "#001b15",
+                    primary: "#34d399",
+                    primary_dark: "#10B981",
                     // secondary: "#bc4749",
                     // white: "#f0efeb",
                     secondary: "#FACC15",

@@ -14,6 +14,8 @@ import Services from "../services/Services"
 import Hero3D from "./Hero3D"
 import Counter from "./Counter"
 import HeroInfo from "./HeroInfo"
+import HeroContact from "./HeroContact"
+import HeroCourses from "./HeroCourses"
 
 const Hero = () => {
     const parallaxRef = useRef(null)
@@ -30,7 +32,7 @@ const Hero = () => {
     return (
         <>
             {/* Landing */}
-            <div className="relative lg:h-[100dvh] w-[100dvw] overflow-hidden bg-ks-primary">
+            <div className="relative lg:h-[100dvh] w-[100dvw] overflow-hidden bg-emerald-400">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                     {/* Text */}
                     <div className="max-lg:h-[100dvh] place-content-center pl-10">
@@ -75,7 +77,14 @@ const Hero = () => {
             </div>
 
             {/* Courses */}
-            <div className="h-[80dvh]"></div>
+            <div className="h-[80dvh]">
+                <HeroCourses />
+            </div>
+
+            {/* Contact */}
+            <div className=" bg-ks-primary">
+                <HeroContact />
+            </div>
         </>
     )
 }

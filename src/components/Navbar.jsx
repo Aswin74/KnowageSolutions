@@ -62,7 +62,7 @@ function Navbar() {
             >
                 <div
                     className={`flex items-center justify-between px-5 lg:px-7.5 ${
-                        !navChange ? "bg-gradient-to-b from-emerald-400/80" : ""
+                        !navChange ? "bg-gradient-to-b from-emerald-300/80" : ""
                     }`}
                 >
                     <Link to="/" className="flex items-center  lg:mr-8 ml-2">
@@ -132,7 +132,7 @@ function Navbar() {
                             to="/register"
                             className="hidden lg:flex uppercase mr-2"
                         >
-                            Register
+                            Apply Now
                         </Button>
 
                         <Button
