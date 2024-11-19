@@ -28,6 +28,9 @@ import {
     Physiotherapy,
 } from "../assets/courses"
 
+
+// Exports
+
 export const navigation = [
     {
         id: "0",
@@ -519,8 +522,216 @@ export const courses = [
                 icon: Management,
             },
         ],
+
+        Others: [
+            {
+                id: 1,
+                name: "BHA",
+                icon: Paramedical,
+            },
+            {
+                id: 2,
+                name: "BPH",
+                icon: Paramedical,
+            },
+            {
+                id: 3,
+                name: "BSW",
+                icon: Paramedical,
+            },
+        ],
     },
 ]
+
+export const addOnCourses =[{
+    BCom: [
+        {
+            id: 1,
+            name: "Aviation",
+            icon: Engineering,
+        },
+        {
+            id: 2,
+            name: "Logistics",
+            icon: Engineering,
+        },
+        {
+            id: 3,
+            name: "Travel & Tourism",
+            icon: Engineering,
+        },
+        {
+            id: 4,
+            name: "Electrical & Electronic",
+            icon: Engineering,
+        },
+        {
+            id: 5,
+            name: "Finance",
+            icon: Engineering,
+        },
+        {
+            id: 6,
+            name: "Taxation",
+            icon: Engineering,
+        },
+        {
+            id: 7,
+            name: "Auditing",
+            icon: Engineering,
+        },
+        {
+            id: 8,
+            name: "ACCA",
+            icon: Engineering,
+        },
+        {
+            id: 9,
+            name: "Digital Marketing",
+            icon: Engineering,
+        },
+        {
+            id: 10,
+            name: "Business Analytics",
+            icon: Engineering,
+        },
+        {
+            id: 11,
+            name: "Stock market",
+            icon: Engineering,
+        },
+        {
+            id: 12,
+            name: "Data analytics",
+            icon: Engineering,
+        },
+        {
+            id: 13,
+            name: "LAW",
+            icon: Engineering,
+        },
+        
+    ],
+
+    BBA: [
+        {
+            id: 1,
+            name: "Aviation",
+            icon: Engineering,
+        },
+        {
+            id: 2,
+            name: "Logistics",
+            icon: Engineering,
+        },
+        {
+            id: 3,
+            name: "Travel & Tourism",
+            icon: Engineering,
+        },
+        {
+            id: 4,
+            name: "Port Management",
+            icon: Engineering,
+        },
+        {
+            id: 5,
+            name: "Entrepreneurship",
+            icon: Engineering,
+        },
+        {
+            id: 6,
+            name: "International Bussiness",
+            icon: Engineering,
+        },
+        {
+            id: 7,
+            name: "Hospital Administration",
+            icon: Engineering,
+        },
+        {
+            id: 8,
+            name: "Medical Tourism",
+            icon: Engineering,
+        },
+        {
+            id: 9,
+            name: "Digital Marketing",
+            icon: Engineering,
+        },
+        {
+            id: 10,
+            name: "Data Analytics",
+            icon: Engineering,
+        },        
+    ],
+
+    BCA: [
+        {
+            id: 1,
+            name: "Arificial Intelligence",
+            icon: Engineering,
+        },
+        {
+            id: 2,
+            name: "Robotics",
+            icon: Engineering,
+        },
+        {
+            id: 3,
+            name: "Machine Learning",
+            icon: Engineering,
+        },
+        {
+            id: 4,
+            name: "Cyber Forensic",
+            icon: Engineering,
+        },
+        {
+            id: 5,
+            name: "Cyber Security",
+            icon: Engineering,
+        },
+        {
+            id: 6,
+            name: "Ethical Hacking",
+            icon: Engineering,
+        },
+        {
+            id: 7,
+            name: "IoT",
+            icon: Engineering,
+        },
+        {
+            id: 8,
+            name: "Cloud Computing",
+            icon: Engineering,
+        },
+        {
+            id: 9,
+            name: "Game Design",
+            icon: Engineering,
+        },
+        {
+            id: 10,
+            name: "Data Analytics",
+            icon: Engineering,
+        },  
+        {
+            id: 11,
+            name: "Augmented & Virtual Reality",
+            icon: Engineering,
+        }, {
+            id: 12,
+            name: "Graphic Design",
+            icon: Engineering,
+        }, {
+            id: 13,
+            name: "Software Development",
+            icon: Engineering,
+        },       
+    ],
+}]
 
 export const address = [
     {
