@@ -399,7 +399,7 @@ export const courses = [
             },
             {
                 id: 3,
-                name: "Artificial Intelligence & Machine Learning",
+                name: "AI & ML",
                 icon: Engineering,
             },
             {

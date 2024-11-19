@@ -9,10 +9,17 @@ import Tabs from "./Tabs"
 
 const Courses = () => {
     const [selectedCourse, setSelectedCourse] = useState("Medical")
+    const [addOn, setAddOn] = useState(false)
 
     function handleSelect(e) {
         const selected = e.target.value
         setSelectedCourse(selected)
+
+        if (selected === "AddOn") {
+            setAddOn(true)
+        } else {
+            setAddOn(false)
+        }
         console.log(selected)
     }
     return (
@@ -21,7 +28,7 @@ const Courses = () => {
                 <Heading title="COURSES" className="mt-20 lg:mt-15" />
 
                 <menu>
-                    <Tabs
+                    {/* <Tabs
                         text="Medical"
                         onClick={handleSelect}
                         value="Medical"
@@ -56,18 +63,31 @@ const Courses = () => {
                         text="Management"
                         onClick={handleSelect}
                         value="Management"
-                    />
+                    /> */}
+
+                    <Tabs value={selectedCourse} onChange={handleSelect} />
+                    {addOn && (
+                        <>
+                            <h1>sas</h1>
+                            <select>
+                                <option>huuha </option>
+                            </select>
+                        </>
+                    )}
                 </menu>
 
                 <div className="grid grid-cols-2 gap-2 lg:grid-cols-4">
-                    {courses[0][selectedCourse].map((course) => (
-                        <Card
-                            key={course.id}
-                            img={course.icon}
-                            course={course.name}
-                            alt={course.name}
-                        />
-                    ))}
+                    {!addOn &&
+                        courses[0][selectedCourse].map((course) => (
+                            <Card
+                                key={course.id}
+                                img={course.icon}
+                                course={course.name}
+                                alt={course.name}
+                            />
+                        ))}
+
+                    {addOn && <h1>add on</h1>}
                 </div>
                 {/* <Button className="mt-6">View More</Button> */}
             </div>
