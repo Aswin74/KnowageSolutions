@@ -6,12 +6,12 @@ const Card = ({ id, img, course }) => {
         <div
             id={id}
             className="h-52 w-48 p-[0.2rem] m-3 items-center 
-                overflow-hidden lg:h-60 lg:w-56 group/card"
+                overflow-hidden lg:h-60 lg:w-56 group/card duration-500 hover:ks-flipper"
         >
             {/* bg-gradient-to-r from-ks-primary to-teal-800 text-ks-white rounded-xl hover:bg-gradient-to-l */}
             {/* group-hover/card:border-ks-primary 22222  group-hover/card:text-ks-primary */}
             <div
-                className="flex flex-col p-4 items-center justify-between w-full h-full transition-all duration-100 rounded-tl-3xl rounded-br-3xl
+                className="flex flex-col p-4 items-center justify-between w-full h-full transition-all duration-500 rounded-tl-3xl rounded-br-3xl
       bg-ks-primary border-4 border-ks-white group-hover/card:bg-ks-primary_dark group-hover/card:rounded-lg "
             >
                 <img

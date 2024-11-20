@@ -18,6 +18,7 @@ const Tabs = ({
             >
                 <option value="Medical">Medical</option>
                 <option value="Paramedical">Paramedical</option>
+                <option value="Engineering">Engineering</option>
                 <option value="AlliedHealthScience">
                     Allied Health Science
                 </option>

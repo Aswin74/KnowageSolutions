@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import { transform } from "framer-motion"
 import { fontFamily } from "tailwindcss/defaultTheme"
 import plugin from "tailwindcss/plugin"
 
@@ -155,6 +156,10 @@ export default {
                 ".tap-highlight-color": {
                     "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
                 },
+
+                ".ks-flipper":{
+                    transform:"rotateY(360deg)"
+                }
             })
         }),
     ],
