@@ -7,12 +7,12 @@ const Register = () => {
     // name,course Dropdown, phone , email, District , State , Address ,Pincode, Highest Qualification
     const [userName, setUserName] = useState("")
     const [userEmail, setUserEmail] = useState("")
-    const [userPhone, setuserPhone] = useState("")
+    const [userPhone, setUserPhone] = useState("")
     const [userDistrict, setUserDistrict] = useState("")
     const [userState, setUserState] = useState("")
     const [userAddress, setUserAddress] = useState("")
     const [userPincode, setUserPincode] = useState("")
-    const [userDOB, setuserDOB] = useState("")
+    const [userDOB, setUserDOB] = useState("")
     const [userGender, setUserGender] = useState("")
     const [selectedCourse, setSelectedCourse] = useState("")
     const [userComments, setUserComments] = useState("")
@@ -25,6 +25,17 @@ const Register = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         setUserName("")
+        setUserName("")
+        setUserEmail("")
+        setUserPhone("")
+        setUserDistrict("")
+        setUserState("")
+        setUserAddress("")
+        setUserPincode("")
+        setUserDOB("")
+        setUserGender("")
+        setSelectedCourse("")
+        setUserComments("")
 
         const inputData = {
             service_id: service_id,
@@ -45,11 +56,12 @@ const Register = () => {
             },
         }
 
-        sendEmail(inputData)
+        // sendEmail(inputData)
+        console.log("Sending off", inputData)
     }
 
     return (
-        <section className="h-[100dvh] bg-radial-gradient from-ks-primary/50 to-ks-primary">
+        <section className="bg-radial-gradient from-ks-primary/50 to-ks-primary">
             <form onSubmit={handleSubmit} className="pt-44">
                 <InputBox
                     label="Name"
@@ -58,6 +70,94 @@ const Register = () => {
                         setUserName(e.target.value)
                     }}
                 />
+
+                <InputBox
+                    label="Email"
+                    type="email"
+                    value={userEmail}
+                    onChange={(e) => {
+                        setUserEmail(e.target.value)
+                    }}
+                />
+
+                <InputBox
+                    label="Phone"
+                    value={userPhone}
+                    onChange={(e) => {
+                        setUserPhone(e.target.value)
+                    }}
+                />
+
+                <InputBox
+                    label="Address"
+                    value={userAddress}
+                    multiline
+                    onChange={(e) => {
+                        setUserAddress(e.target.value)
+                    }}
+                />
+
+                <InputBox
+                    label="District"
+                    value={userDistrict}
+                    onChange={(e) => {
+                        setUserDistrict(e.target.value)
+                    }}
+                />
+
+                <InputBox
+                    label="State"
+                    value={userState}
+                    onChange={(e) => {
+                        setUserState(e.target.value)
+                    }}
+                />
+
+                <InputBox
+                    label="Pincode"
+                    value={userPincode}
+                    onChange={(e) => {
+                        setUserPincode(e.target.value)
+                    }}
+                />
+
+                <InputBox
+                    label="DOB"
+                    type="date"
+                    value={userDOB}
+                    onChange={(e) => {
+                        setUserDOB(e.target.value)
+                    }}
+                />
+
+                <InputBox
+                    label="Gender"
+                    dropDown
+                    dropData={["Male", "Female", "Transgender"]}
+                    value={userGender}
+                    onChange={(e) => {
+                        setUserGender(e.target.value)
+                    }}
+                />
+
+                <InputBox
+                    label="Course"
+                    value={selectedCourse}
+                    onChange={(e) => {
+                        setSelectedCourse(e.target.value)
+                    }}
+                />
+
+                <InputBox
+                    label="Comments"
+                    value={userComments}
+                    multiline
+                    onChange={(e) => {
+                        setUserComments(e.target.value)
+                    }}
+                />
+
+                {/* Button */}
                 <button
                     type="submit"
                     className="group/button button h-11 relative inline-flex items-center justify-center text-ks-white bg-ks-secondary border-2 border-ks-secondary rounded-full hover:bg-transparent
@@ -65,7 +165,6 @@ const Register = () => {
                 >
                     Apply
                 </button>
-                {userName}
             </form>
         </section>
     )

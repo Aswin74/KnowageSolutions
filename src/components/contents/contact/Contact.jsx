@@ -55,7 +55,7 @@ const Contact = () => {
                         Don't worry we'll help you through the process. Your
                         future is our priority.
                     </p>
-                    <Button href="+919035015369">Contact Us Now</Button>
+                    <Button to="tel:+919035015369">Contact Us Now</Button>
                 </div>
 
                 {/* Contact Circle */}

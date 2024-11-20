@@ -41,13 +41,10 @@ function Navbar() {
     }
 
     useEffect(() => {
-        if (currPath == "/") {
-            changeBackground()
-            window.addEventListener("scroll", changeBackground)
-            setNavChange(false)
-        } else {
-            setNavChange(true)
-        }
+        // if (currPath == "/" || currPath == "/courses") {
+        changeBackground()
+        window.addEventListener("scroll", changeBackground)
+
         return () => {
             window.removeEventListener("scroll", changeBackground)
         }
@@ -62,7 +59,7 @@ function Navbar() {
             >
                 <div
                     className={`flex items-center justify-between px-5 lg:px-7.5 ${
-                        !navChange ? "bg-gradient-to-b from-emerald-300/80" : ""
+                        !navChange ? "bg-gradient-to-b from-emerald-300/70" : ""
                     }`}
                 >
                     <Link to="/" className="flex items-center  lg:mr-8 ml-2">

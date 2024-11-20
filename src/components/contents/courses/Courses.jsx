@@ -11,7 +11,7 @@ import { makeUseVisualState } from "framer-motion"
 const Courses = () => {
     const [selectedCourse, setSelectedCourse] = useState("Medical")
     const [addOn, setAddOn] = useState(false)
-    const [selectedAddOn, setSelectedAddOn] = useState("BBA")
+    const [selectedAddOn, setSelectedAddOn] = useState("BCom")
 
     function handleSelect(e) {
         const selected = e.target.value
@@ -30,11 +30,14 @@ const Courses = () => {
     }
 
     return (
-        <div className="bg-waveBg lg:bg-waveLg bg-fixed bg-cover bg-top lg:mt-10">
+        <div className="bg-waveBg lg:bg-waveLg bg-fixed bg-cover bg-top lg:pt-8">
             <div className="container flex flex-col items-center pb-28">
-                <Heading title="COURSES" className="mt-20 lg:mt-15" />
+                <Heading
+                    title="COURSES"
+                    className="text-ks-white mt-20 lg:mt-15"
+                />
 
-                <menu>
+                <menu className="">
                     <Tabs
                         selectedCourse={selectedCourse}
                         handleCourses={handleSelect}

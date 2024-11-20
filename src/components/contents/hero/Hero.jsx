@@ -82,7 +82,7 @@ const Hero = () => {
             </div>
 
             {/* Contact */}
-            <div className=" bg-ks-primary">
+            <div className=" bg-ks-black">
                 <HeroContact />
             </div>
         </>

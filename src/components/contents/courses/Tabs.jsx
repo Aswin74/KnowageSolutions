@@ -9,8 +9,13 @@ const Tabs = ({
     ...props
 }) => {
     return (
-        <>
-            <select value={selectedCourse} onChange={handleCourses} {...props}>
+        <div className={`grid ${addOn ? "grid-cols-2 gap-2" : "grid-cols-1"}`}>
+            <select
+                className="ks-input"
+                value={selectedCourse}
+                onChange={handleCourses}
+                {...props}
+            >
                 <option value="Medical">Medical</option>
                 <option value="Paramedical">Paramedical</option>
                 <option value="AlliedHealthScience">
@@ -25,13 +30,18 @@ const Tabs = ({
             </select>
 
             {addOn && (
-                <select value={selectedAddOn} onChange={handleAddOn} {...props}>
+                <select
+                    className="ks-input"
+                    value={selectedAddOn}
+                    onChange={handleAddOn}
+                    {...props}
+                >
                     <option value="BCom">B.Com</option>
                     <option value="BBA">BBA (Dual)</option>
                     <option value="BCA">BCA (Triple)</option>
                 </select>
             )}
-        </>
+        </div>
     )
 }
 
