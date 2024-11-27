@@ -7,14 +7,18 @@ import {
     instagramSvg,
     locationSvg,
     phoneSvg,
+    threads,
+    threadsSvg,
     whatsapp,
     whatsappSvg,
     youtube,
     youtubeSvg,
 } from "../assets"
 import {
+    AddOn,
     Agriculture,
     Ayurveda,
+    Computer,
     Dental,
     Designing,
     Engineering,
@@ -95,12 +99,19 @@ export const contactApps = [
         svg: gmailSvg,
         url: "mailto:knowageinternational@gmail.com",
     },
+    // {
+    //     id: "4",
+    //     title: "youtube",
+    //     icon: youtube,
+    //     svg: youtubeSvg,
+    //     url: "https://www.youtube.com/@knowage_international",
+    // },
     {
         id: "4",
-        title: "youtube",
-        icon: youtube,
-        svg: youtubeSvg,
-        url: "https://www.youtube.com/@knowage_international",
+        title: "threads",
+        icon: threads,
+        svg: threadsSvg,
+        url: "#",
     },
 ]
 
@@ -121,6 +132,21 @@ export const counters = [
         title: "Colleges",
     },
 ]
+
+export const heroCourses =[{
+    name:"Medical",
+    icon:Medical,
+},{
+    name:"Engineering",
+    icon:Engineering,
+},{
+    name:"Paramedical",
+    icon:Paramedical,
+},{
+    name:"Management",
+    icon:Management,
+},]
+
 
 export const courses = [
     {
@@ -548,67 +574,67 @@ export const addOnCourses =[{
         {
             id: 1,
             name: "Aviation",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 2,
             name: "Logistics",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 3,
             name: "Travel & Tourism",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 4,
             name: "Electrical & Electronic",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 5,
             name: "Finance",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 6,
             name: "Taxation",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 7,
             name: "Auditing",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 8,
             name: "ACCA",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 9,
             name: "Digital Marketing",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 10,
             name: "Business Analytics",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 11,
             name: "Stock market",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 12,
             name: "Data analytics",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 13,
             name: "LAW",
-            icon: Engineering,
+            icon: Law,
         },
         
     ],
@@ -617,52 +643,52 @@ export const addOnCourses =[{
         {
             id: 1,
             name: "Aviation",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 2,
             name: "Logistics",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 3,
             name: "Travel & Tourism",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 4,
             name: "Port Management",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 5,
             name: "Entrepreneurship",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 6,
             name: "International Bussiness",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 7,
             name: "Hospital Administration",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 8,
             name: "Medical Tourism",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 9,
             name: "Digital Marketing",
-            icon: Engineering,
+            icon: AddOn,
         },
         {
             id: 10,
             name: "Data Analytics",
-            icon: Engineering,
+            icon: AddOn,
         },        
     ],
 
@@ -670,65 +696,65 @@ export const addOnCourses =[{
         {
             id: 1,
             name: "Arificial Intelligence",
-            icon: Engineering,
+            icon: Computer,
         },
         {
             id: 2,
             name: "Robotics",
-            icon: Engineering,
+            icon: Computer,
         },
         {
             id: 3,
             name: "Machine Learning",
-            icon: Engineering,
+            icon: Computer,
         },
         {
             id: 4,
             name: "Cyber Forensic",
-            icon: Engineering,
+            icon: Computer,
         },
         {
             id: 5,
             name: "Cyber Security",
-            icon: Engineering,
+            icon: Computer,
         },
         {
             id: 6,
             name: "Ethical Hacking",
-            icon: Engineering,
+            icon: Computer,
         },
         {
             id: 7,
             name: "IoT",
-            icon: Engineering,
+            icon: Computer,
         },
         {
             id: 8,
             name: "Cloud Computing",
-            icon: Engineering,
+            icon: Computer,
         },
         {
             id: 9,
             name: "Game Design",
-            icon: Engineering,
+            icon: Computer,
         },
         {
             id: 10,
             name: "Data Analytics",
-            icon: Engineering,
+            icon: Computer,
         },  
         {
             id: 11,
             name: "Augmented & Virtual Reality",
-            icon: Engineering,
+            icon: Computer,
         }, {
             id: 12,
             name: "Graphic Design",
-            icon: Engineering,
+            icon: Computer,
         }, {
             id: 13,
             name: "Software Development",
-            icon: Engineering,
+            icon: Computer,
         },       
     ],
 }]

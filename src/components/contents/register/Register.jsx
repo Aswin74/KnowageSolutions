@@ -2,6 +2,7 @@ import { useState } from "react"
 import Button from "../../Button"
 import InputBox from "./InputBox"
 import { sendEmail } from "../../../constants/functions"
+import Heading from "../../Heading"
 
 const Register = () => {
     // name,course Dropdown, phone , email, District , State , Address ,Pincode, Highest Qualification
@@ -56,13 +57,20 @@ const Register = () => {
             },
         }
 
-        // sendEmail(inputData)
+        sendEmail(inputData)
         console.log("Sending off", inputData)
     }
 
     return (
-        <section className="bg-radial-gradient from-ks-primary/50 to-ks-primary">
-            <form onSubmit={handleSubmit} className="pt-44">
+        <section className="pt-36 pb-20 container place-items-end bg-poly-grid lg:bg-cover bg-fixed">
+            <form
+                onSubmit={handleSubmit}
+                className="p-6 lg:p-10 w-3/4 lg:w-1/2 grid lg:grid-cols-2 gap-2 bg-ks-gray rounded-xl"
+            >
+                <Heading
+                    title="Register"
+                    className="uppercase text-ks-primary_dark lg:col-span-2 place-self-center"
+                />
                 <InputBox
                     label="Name"
                     value={userName}
@@ -90,6 +98,7 @@ const Register = () => {
 
                 <InputBox
                     label="Address"
+                    className="lg:col-span-2"
                     value={userAddress}
                     multiline
                     onChange={(e) => {
@@ -97,29 +106,31 @@ const Register = () => {
                     }}
                 />
 
-                <InputBox
-                    label="District"
-                    value={userDistrict}
-                    onChange={(e) => {
-                        setUserDistrict(e.target.value)
-                    }}
-                />
+                <div className="grid lg:col-span-2 grid-cols-3 gap-2">
+                    <InputBox
+                        label="District"
+                        value={userDistrict}
+                        onChange={(e) => {
+                            setUserDistrict(e.target.value)
+                        }}
+                    />
 
-                <InputBox
-                    label="State"
-                    value={userState}
-                    onChange={(e) => {
-                        setUserState(e.target.value)
-                    }}
-                />
+                    <InputBox
+                        label="State"
+                        value={userState}
+                        onChange={(e) => {
+                            setUserState(e.target.value)
+                        }}
+                    />
 
-                <InputBox
-                    label="Pincode"
-                    value={userPincode}
-                    onChange={(e) => {
-                        setUserPincode(e.target.value)
-                    }}
-                />
+                    <InputBox
+                        label="Pincode"
+                        value={userPincode}
+                        onChange={(e) => {
+                            setUserPincode(e.target.value)
+                        }}
+                    />
+                </div>
 
                 <InputBox
                     label="DOB"
@@ -142,6 +153,7 @@ const Register = () => {
 
                 <InputBox
                     label="Course"
+                    className="lg:col-span-2"
                     value={selectedCourse}
                     onChange={(e) => {
                         setSelectedCourse(e.target.value)
@@ -149,7 +161,8 @@ const Register = () => {
                 />
 
                 <InputBox
-                    label="Comments"
+                    label="Remarks"
+                    className="lg:col-span-2"
                     value={userComments}
                     multiline
                     onChange={(e) => {
@@ -160,8 +173,8 @@ const Register = () => {
                 {/* Button */}
                 <button
                     type="submit"
-                    className="group/button button h-11 relative inline-flex items-center justify-center text-ks-white bg-ks-secondary border-2 border-ks-secondary rounded-full hover:bg-transparent
-  transition-colors hover:text-ks-secondary px-5"
+                    className=" group/button button h-11 relative inline-flex items-center justify-center text-ks-white bg-ks-secondary border-2 border-ks-secondary rounded-full hover:bg-transparent
+  transition-colors hover:text-ks-secondary mt-4 px-5 lg:col-span-2"
                 >
                     Apply
                 </button>

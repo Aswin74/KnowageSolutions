@@ -11,7 +11,7 @@ const Tabs = ({
     return (
         <div className={`grid ${addOn ? "grid-cols-2 gap-2" : "grid-cols-1"}`}>
             <select
-                className="ks-input"
+                className="ks-dropDown"
                 value={selectedCourse}
                 onChange={handleCourses}
                 {...props}

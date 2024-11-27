@@ -1,12 +1,10 @@
 import React, { useState } from "react"
-import Section from "../../Section"
 import Heading from "../../Heading"
 import { BottomLine } from "../../../assets/design/BackgroudDesigns"
-import Button from "../../Button"
 import Card from "../../Card"
-import { addOnCourses, courses } from "../../../constants"
 import Tabs from "./Tabs"
-import { makeUseVisualState } from "framer-motion"
+import { addOnCourses, courses } from "../../../constants"
+import { motion } from "framer-motion"
 
 const Courses = () => {
     const [selectedCourse, setSelectedCourse] = useState("Medical")
@@ -46,9 +44,20 @@ const Courses = () => {
                         handleAddOn={handleAddOn}
                     />
                 </menu>
-                {addOn && <h1>{selectedAddOn}</h1>}
+                {addOn && (
+                    <h1 className="text-3xl my-4 font-bold text-ks-gray">
+                        {selectedAddOn}
+                    </h1>
+                )}
 
-                <div className="grid grid-cols-2 gap-2 lg:grid-cols-4">
+                <motion.div
+                    key={`${selectedCourse}-${selectedAddOn}`}
+                    variants={{ hidden: { scale: 0 }, visible: { scale: 1 } }}
+                    transition={{ duration: 0.3 }}
+                    initial="hidden"
+                    animate="visible"
+                    className="grid grid-cols-2 gap-2 lg:grid-cols-4"
+                >
                     {!addOn &&
                         courses[0][selectedCourse].map((course) => (
                             <Card
@@ -68,8 +77,7 @@ const Courses = () => {
                                 alt={course.name}
                             />
                         ))}
-                </div>
-                {/* <Button className="mt-6">View More</Button> */}
+                </motion.div>
             </div>
         </div>
     )

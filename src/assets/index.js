@@ -21,10 +21,12 @@ import youtube from "./contact/youtube.png";
 import instagram from "./contact/instagram.png";
 import gmail from "./contact/gmail.png";
 import whatsapp from "./contact/whatsapp.png";
+import threads from "./contact/threads.png"
 
 import fbSvg from "./socials/facebook.svg";
 import locationSvg from "./socials/location.svg";
 import instagramSvg from "./socials/instagram.svg";
+import threadsSvg from "./socials/threads.svg"
 import gmailSvg from "./socials/gmail.svg";
 import youtubeSvg from "./socials/youtube.svg";
 import whatsappSvg from "./socials/whatsapp.svg";
@@ -56,11 +58,13 @@ export {
   instagram,
   gmail,
   whatsapp,
+  threads,
   lines,
   stars,
   fbSvg,
   locationSvg,
   instagramSvg,
+  threadsSvg,
   gmailSvg,
   youtubeSvg,
   whatsappSvg,

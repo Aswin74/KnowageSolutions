@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Button from "./Button"
 
 const Card = ({ id, img, course }) => {
@@ -6,12 +7,12 @@ const Card = ({ id, img, course }) => {
         <div
             id={id}
             className="h-52 w-48 p-[0.2rem] m-3 items-center 
-                overflow-hidden lg:h-60 lg:w-56 group/card duration-500 hover:ks-flipper"
+                overflow-hidden lg:h-60 lg:w-56 group/card duration-500 hover:-translate-y-3"
         >
             {/* bg-gradient-to-r from-ks-primary to-teal-800 text-ks-white rounded-xl hover:bg-gradient-to-l */}
             {/* group-hover/card:border-ks-primary 22222  group-hover/card:text-ks-primary */}
             <div
-                className="flex flex-col p-4 items-center justify-between w-full h-full transition-all duration-500 rounded-tl-3xl rounded-br-3xl
+                className="flex flex-col p-4 items-center justify-between w-full h-full transition-all duration-200 rounded-tl-3xl rounded-br-3xl
       bg-ks-primary border-4 border-ks-white group-hover/card:bg-ks-primary_dark group-hover/card:rounded-lg "
             >
                 <img
@@ -23,14 +24,16 @@ const Card = ({ id, img, course }) => {
                     {course}
                 </h6>
 
-                <button
-                    className="group/button button h-11 px-5 relative inline-flex items-center justify-center rounded-lg bg-ks-white
+                <Link to="/register">
+                    <button
+                        className="group/button button h-11 px-5 relative inline-flex items-center justify-center rounded-lg bg-ks-white
   transition-colors"
-                >
-                    <span className="text-ks-primary group-hover/button:scale-110">
-                        APPLY
-                    </span>
-                </button>
+                    >
+                        <span className="text-ks-primary group-hover/button:scale-110">
+                            APPLY
+                        </span>
+                    </button>
+                </Link>
             </div>
         </div>
     )

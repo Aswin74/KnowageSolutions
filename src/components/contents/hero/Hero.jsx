@@ -77,7 +77,7 @@ const Hero = () => {
             </div>
 
             {/* Courses */}
-            <div className="h-[80dvh]">
+            <div className="lg:my-5">
                 <HeroCourses />
             </div>
 

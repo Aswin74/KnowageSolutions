@@ -94,6 +94,7 @@ export default {
                 university2: "url('./src/assets/hero/university2.jpg')",
                 waveBg: "url('./src/assets/courses/nonSvg/WaveBg.jpg')",
                 waveLg: "url('./src/assets/courses/nonSvg/WaveLg.jpg')",
+                wave2: "url('./src/assets/Wave2.svg')"
             },
         },
     },
@@ -158,7 +159,7 @@ export default {
                 },
 
                 ".ks-flipper":{
-                    transform:"rotateY(360deg)"
+                    transform:"rotateY(180deg)"
                 }
             })
         }),

@@ -1,8 +1,16 @@
 import React from "react"
 
-const InputBox = ({ dropDown, dropData, label, type, multiline, ...props }) => {
+const InputBox = ({
+    label,
+    type,
+    className,
+    multiline,
+    dropDown,
+    dropData,
+    ...props
+}) => {
     const renderInput = () => (
-        <div className="">
+        <div className={className}>
             <label className="ks-label">{label}</label>
             {!multiline ? (
                 <input
@@ -18,7 +26,7 @@ const InputBox = ({ dropDown, dropData, label, type, multiline, ...props }) => {
     )
 
     const renderDropDown = () => (
-        <div className="">
+        <div className={className}>
             <label className="ks-label">{label}</label>
             <select className="ks-input" {...props} required>
                 <option value="" disabled>

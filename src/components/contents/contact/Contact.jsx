@@ -27,12 +27,12 @@ const QUESTIONS = [
 
 const Contact = () => {
     return (
-        <Section id="contact">
-            <div className="realtive flex max-md:flex-col container mb-28">
+        <Section id="contact" className="bg-waveLg">
+            <div className="realtive flex max-md:flex-col container mb-28 pt-15">
                 <div className="max-w-[29rem]">
                     <Heading
                         title="Feeling Confused? Contact&nbsp;Us&nbsp;Now"
-                        className="max-md:mx-auto max-md:text-center"
+                        className="max-md:mx-auto max-md:text-center text-ks-white"
                     />
 
                     <ul className="max-w-[24rem] mb-4">
@@ -42,7 +42,7 @@ const Contact = () => {
                                 className="flex items-start leading-10"
                             >
                                 <img src={bullet} className="mr-2" />
-                                <span className="text-lg lg:text-xl ">
+                                <span className="text-lg lg:text-xl text-ks-gray">
                                     {ques.text}
                                 </span>
                             </li>

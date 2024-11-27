@@ -116,7 +116,6 @@ function Navbar() {
                                         } lg:leading-5`
                                     }
                                     onClick={handleNavClick}
-                                    reloadDocument
                                 >
                                     {item.title}
                                 </NavLink>
