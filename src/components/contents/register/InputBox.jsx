@@ -15,7 +15,7 @@ const InputBox = ({
             {!multiline ? (
                 <input
                     className="ks-input"
-                    type={type ? type : "text"}
+                    type={type ?? "text"}
                     {...props}
                     required
                 />
@@ -29,11 +29,15 @@ const InputBox = ({
         <div className={className}>
             <label className="ks-label">{label}</label>
             <select className="ks-input" {...props} required>
-                <option value="" disabled>
+                <option className="bg-ks-white" value="" disabled>
                     Select
                 </option>
                 {dropData.map((item, index) => (
-                    <option key={index} value={item}>
+                    <option
+                        className="text-ks-black bg-ks-gray"
+                        key={index}
+                        value={item}
+                    >
                         {item}
                     </option>
                 ))}

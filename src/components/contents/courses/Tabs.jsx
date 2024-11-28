@@ -32,7 +32,7 @@ const Tabs = ({
 
             {addOn && (
                 <select
-                    className="ks-input"
+                    className="ks-dropDown"
                     value={selectedAddOn}
                     onChange={handleAddOn}
                     {...props}

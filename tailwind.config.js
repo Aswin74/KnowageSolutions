@@ -21,7 +21,7 @@ export default {
                     secondary: "#FACC15",
                     white: "#f4f4f5",
                     black: "#212529",
-                    gray: "#f0efeb",
+                    gray: "#D9D9D9",
                 },
                 color: {
                     1: "#AC6AFF",

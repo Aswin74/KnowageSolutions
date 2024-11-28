@@ -39,15 +39,15 @@ textarea {
 }
 
 .ks-label {
-    @apply mb-2 text-sm font-medium text-ks-black;
+    @apply mb-2 text-sm font-medium text-ks-black/70;
 }
 
 .ks-input {
-    @apply bg-ks-black/5 border border-gray-300 text-ks-black rounded-lg outline-ks-secondary focus:ring-ks-secondary focus:border-ks-secondary block w-full p-2;
+    @apply bg-ks-gray/10 border border-gray-300  text-ks-black rounded-lg outline-ks-secondary focus:ring-ks-secondary focus:border-ks-secondary block w-full p-2;
 }
 
 .ks-dropDown {
-    @apply bg-ks-gray/80 border border-gray-300 text-ks-white rounded-lg outline-ks-secondary focus:ring-ks-secondary focus:border-ks-secondary block w-full p-3;
+    @apply bg-ks-gray/80 border border-gray-300 text-ks-black rounded-lg outline-ks-secondary focus:ring-ks-secondary focus:border-ks-secondary block w-full p-3;
 }
 
 .rotate-72 {

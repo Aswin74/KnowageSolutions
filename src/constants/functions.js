@@ -24,6 +24,7 @@ export const sendEmail = async (data) => {
             result = await response.text() // Read as text if it's not JSON
         }
         console.log(`Email Sent Successfully : ${result}`)
+        
     } catch (error) {
         console.log(`Error Sending mail : ${error}`)
     }
