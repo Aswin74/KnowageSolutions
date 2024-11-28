@@ -2,7 +2,7 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { sendEmail } from "../../../constants/functions"
 import Button from "../../Button"
-import InputBox from "./InputBox"
+import InputBox from "../../InputBox"
 import Heading from "../../Heading"
 
 const RegForm = () => {
@@ -63,7 +63,7 @@ const RegForm = () => {
     }
 
     return (
-        <div className="w-3/4 mx-auto rounded-xl border border-ks-gray bg-ks-white lg:w-[80%] ">
+        <div className="w-[80%] mx-auto rounded-xl border border-ks-gray bg-ks-white ">
             <div className="w-full place-items-center rounded-t-xl pt-2">
                 <Heading
                     title="Register"
@@ -167,6 +167,7 @@ const RegForm = () => {
 
                 <InputBox
                     label="Remarks"
+                    placeholder="Feel free to share anything you'd like us to know!"
                     className="lg:col-span-2"
                     value={userComments}
                     multiline

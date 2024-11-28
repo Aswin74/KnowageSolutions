@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 
 const Button = ({ className, to, onClick, children, px, ...props }) => {
@@ -15,8 +16,14 @@ const Button = ({ className, to, onClick, children, px, ...props }) => {
     )
 
     const renderLink = () => (
-        <Link to={to} className={buttonClass} {...props}>
-            <span className={childrenClass}>{children}</span>
+        <Link to={to}>
+            <motion.button
+                whileTap={{ scale: 0.9 }}
+                className={buttonClass}
+                {...props}
+            >
+                <span className={childrenClass}>{children}</span>
+            </motion.button>
         </Link>
     )
 

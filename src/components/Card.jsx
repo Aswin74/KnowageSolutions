@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import Button from "./Button"
+import { motion } from "framer-motion"
 
 const Card = ({ id, img, course }) => {
     // Reusable Card Component for below
@@ -25,14 +26,15 @@ const Card = ({ id, img, course }) => {
                 </h6>
 
                 <Link to="/register">
-                    <button
+                    <motion.button
+                        whileTap={{ scale: 0.9 }}
                         className="group/button button h-11 px-5 relative inline-flex items-center justify-center rounded-lg bg-ks-white
   transition-colors"
                     >
                         <span className="text-ks-primary group-hover/button:scale-110">
                             APPLY
                         </span>
-                    </button>
+                    </motion.button>
                 </Link>
             </div>
         </div>
