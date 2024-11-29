@@ -5,7 +5,7 @@ import Heading from "../../Heading"
 
 const HeroCourses = () => {
     return (
-        <div className="place-items-center p-5">
+        <div className="grid place-content-center place-items-center p-5">
             <Heading title="Our Courses" />
 
             <div className="grid grid-cols-2 lg:grid-cols-4">

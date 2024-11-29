@@ -108,7 +108,7 @@ const RegForm = ({ pCourse }) => {
 
     return (
         <div className="w-[80%] mx-auto rounded-xl border border-ks-gray bg-ks-white ">
-            <div className="w-full place-items-center rounded-t-xl pt-2">
+            <div className="w-full grid place-items-center mx-auto rounded-t-xl pt-2">
                 <Heading
                     title="Register"
                     className="uppercase text-ks-primary mb-0"
@@ -241,7 +241,7 @@ const RegForm = ({ pCourse }) => {
 
                 {isSuccess && (
                     <div className="col-span-2 bg-ks-primary text-ks-white py-1 px-2 rounded-full font-semibold mx-auto">
-                        <p>Applied Successfully</p>
+                        <p>Applied Successfully : OFF</p>
                     </div>
                 )}
 

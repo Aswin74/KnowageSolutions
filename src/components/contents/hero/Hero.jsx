@@ -32,10 +32,10 @@ const Hero = () => {
     return (
         <>
             {/* Landing */}
-            <div className="relative lg:h-[100dvh] w-[100dvw] overflow-hidden bg-emerald-400">
+            <div className="relative lg:h-[100vh] w-[100vw] overflow-hidden bg-emerald-400">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                     {/* Text */}
-                    <div className="max-lg:h-[100dvh] place-content-center pl-10">
+                    <div className="max-lg:h-[100vh] grid place-content-center my-auto pl-10">
                         <h1 className="hlarge uppercase mb-3 text-ks-white ">
                             Study&nbsp;in&nbsp;
                             <span className="text-ks-secondary">India</span>,
@@ -60,7 +60,7 @@ const Hero = () => {
                     </div>
 
                     {/* 3D section */}
-                    <div className="grid grid-cols-1">
+                    <div className="h-screen grid grid-cols-1">
                         <Hero3D />
                     </div>
                 </div>
