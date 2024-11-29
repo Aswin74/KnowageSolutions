@@ -59,13 +59,11 @@ const Footer = () => {
             </div>
 
             <div
-                className="container flex justify-center items-center border-t border-stroke-gray
-       gap-10 py-2 md:justify-between"
+                className="container text-[0.55rem] flex justify-center items-center text-ks-white/50 border-t border-stroke-gray
+       gap-10 py-2 md:justify-between md:caption"
             >
-                <p className="text-xs text-ks-white/50 md:caption">
-                    ©2024. All rights reserved.
-                </p>
-                <p className="text-xs text-ks-white/50 ">
+                <p>©2024. All rights reserved.</p>
+                <p>
                     Designed & Developed by&nbsp;
                     <a
                         href="https://www.instagram.com/aswin._.jp/"

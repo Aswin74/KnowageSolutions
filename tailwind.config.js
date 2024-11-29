@@ -107,7 +107,7 @@ export default {
                         {},
                 },
                 ".hlarge": {
-                    "@apply text-[3rem] lg:text-[4.5rem] leading-[3rem] lg:leading-[5rem] font-semibold":
+                    "@apply text-[2rem] md:text-[3rem] lg:text-[4.5rem] leading-[3rem] lg:leading-[5rem] font-semibold":
                         {},
                 },
                 ".h1": {

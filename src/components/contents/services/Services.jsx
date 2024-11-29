@@ -1,5 +1,5 @@
 import React from "react"
-import Section from "../../Section"
+import { motion } from "framer-motion"
 import Heading from "../../Heading"
 
 import { BottomLine } from "../../../assets/design/BackgroudDesigns"
@@ -19,9 +19,9 @@ import {
 const Card = ({ className, img, title, text }) => {
     // Reusable Card Component for below
     return (
-        <div
-            className={`${className} h-28 flex p-3 items-center backdrop-blur-[2px]
-			border-2 border-stroke-tint shadow-md shadow-cyan-300/50 rounded-3xl overflow-hidden`}
+        <motion.div
+            className={`${className} h-28 flex p-3 items-center backdrop-blur-[2px] bg-ks-black/50
+			border-2 border-stroke-tint shadow-md shadow-cyan-300/80 rounded-3xl overflow-hidden`}
         >
             <img
                 src={img}
@@ -29,14 +29,12 @@ const Card = ({ className, img, title, text }) => {
                 alt="icon"
             />
             <div className="block">
-                <h5 className="h5 font-code font-semibold text-ks-secondary">
+                <h5 className="h5 font-code font-semibold text-ks-white">
                     {title}
                 </h5>
-                {text && (
-                    <p className="body-2 text-ks-white max-w-72">{text}</p>
-                )}
+                {text && <p className="body-2 text-ks-gray max-w-72">{text}</p>}
             </div>
-        </div>
+        </motion.div>
     )
 }
 

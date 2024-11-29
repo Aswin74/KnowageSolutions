@@ -59,10 +59,10 @@ const Counter = () => {
                         key={item.id}
                         className="grid place-items-center p-3"
                     >
-                        <motion.h3 className="text-ks-secondary font-bold text-4xl">
+                        <motion.h3 className="text-ks-secondary font-bold text-3xl md:text-4xl">
                             {springNum}+
                         </motion.h3>
-                        <p className="text-ks-primary underline underline-offset-4 font-semibold text-xl">
+                        <p className="text-ks-primary underline underline-offset-4 font-semibold text-base md:text-xl">
                             {item.title}
                         </p>
                         {/* <div className="h-1 w-full bg-ks-primary rounded-full" /> */}
