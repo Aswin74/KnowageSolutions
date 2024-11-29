@@ -25,7 +25,7 @@ const Card = ({ id, img, course }) => {
                     {course}
                 </h6>
 
-                <Link to="/register">
+                <Link to="/register" state={{ course }}>
                     <motion.button
                         whileTap={{ scale: 0.9 }}
                         className="group/button button h-11 px-5 relative inline-flex items-center justify-center rounded-lg bg-ks-white

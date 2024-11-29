@@ -1,7 +1,10 @@
+import { useLocation } from "react-router-dom"
 import RegForm from "./RegForm"
 import RegisterInfo from "./RegisterInfo"
 
 const Register = () => {
+    const location = useLocation()
+    const { course } = location.state || {}
     // name,course Dropdown, phone , email, District , State , Address ,Pincode, Highest Qualification
 
     return (
@@ -13,7 +16,7 @@ const Register = () => {
 
             {/* Form */}
             <div className="pt-32 pb-20 grid grid-cols-1 h-full">
-                <RegForm />
+                <RegForm pCourse={course} />
             </div>
         </section>
     )

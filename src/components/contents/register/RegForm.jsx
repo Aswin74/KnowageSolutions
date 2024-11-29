@@ -1,11 +1,11 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { sendEmail } from "../../../constants/functions"
 import Button from "../../Button"
 import InputBox from "../../InputBox"
 import Heading from "../../Heading"
 
-const RegForm = () => {
+const RegForm = ({ pCourse }) => {
     const [userName, setUserName] = useState("")
     const [userEmail, setUserEmail] = useState("")
     const [userPhone, setUserPhone] = useState("")
@@ -18,25 +18,40 @@ const RegForm = () => {
     const [selectedCourse, setSelectedCourse] = useState("")
     const [userComments, setUserComments] = useState("")
 
+    const [isSuccess, setIsSuccess] = useState(false)
+    const [isError, setIsError] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
+
     const service_id = import.meta.env.VITE_EMAIL_JS_SERVICE_ID
     const template_id = import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID
     const user_id = import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
 
+    // Setting selected course via parameter
+    useEffect(() => {
+        {
+            pCourse ? setSelectedCourse(pCourse) : setSelectedCourse("")
+        }
+    }, [pCourse])
+
     // Sending mail
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
-        setUserName("")
-        setUserName("")
-        setUserEmail("")
-        setUserPhone("")
-        setUserDistrict("")
-        setUserState("")
-        setUserAddress("")
-        setUserPincode("")
-        setUserDOB("")
-        setUserGender("")
-        setSelectedCourse("")
-        setUserComments("")
+        // setUserName("")
+        // setUserName("")
+        // setUserEmail("")
+        // setUserPhone("")
+        // setUserDistrict("")
+        // setUserState("")
+        // setUserAddress("")
+        // setUserPincode("")
+        // setUserDOB("")
+        // setUserGender("")
+        // setSelectedCourse("")
+        // setUserComments("")
+
+        setIsSuccess(false)
+        setIsError(false)
+        setIsLoading(true)
 
         const inputData = {
             service_id: service_id,
@@ -57,9 +72,38 @@ const RegForm = () => {
             },
         }
 
-        // sendEmail(inputData)
-        console.log("Sending off", inputData)
-        window.scrollTo(0, 0)
+        try {
+            // await sendEmail(inputData)
+            // console.log("Sending off", inputData)
+            // window.scrollTo(0, 0)
+            setIsLoading(true)
+            setIsSuccess(true)
+            setIsError(false)
+        } catch (error) {
+            setIsSuccess(false)
+            setIsError(true)
+        } finally {
+            setIsLoading(false)
+        }
+    }
+
+    // Reset
+    const handleReset = (e) => {
+        e.preventDefault()
+        setUserName("")
+        setUserName("")
+        setUserEmail("")
+        setUserPhone("")
+        setUserDistrict("")
+        setUserState("")
+        setUserAddress("")
+        setUserPincode("")
+        setUserDOB("")
+        setUserGender("")
+        setSelectedCourse("")
+        setUserComments("")
+        setIsSuccess(false)
+        setIsError(false)
     }
 
     return (
@@ -74,6 +118,7 @@ const RegForm = () => {
             {/* form */}
             <form
                 onSubmit={handleSubmit}
+                onReset={handleReset}
                 className="p-6 grid lg:grid-cols-2 gap-2 "
             >
                 <InputBox
@@ -177,14 +222,34 @@ const RegForm = () => {
                 />
 
                 {/* Button */}
-                <motion.button
-                    whileTap={{ scale: 0.9 }}
-                    type="submit"
-                    className=" group/button button h-11 relative inline-flex items-center justify-center text-ks-white bg-ks-secondary border-2 border-ks-secondary rounded-full hover:bg-transparent
-  transition-colors hover:text-ks-secondary mt-4 px-5 lg:col-span-2"
-                >
-                    Apply
-                </motion.button>
+                <div className="lg:col-span-2 grid grid-cols-2 gap-2">
+                    <motion.button
+                        whileTap={{ scale: 0.9 }}
+                        type="submit"
+                        className=" group/button button h-11 text-base relative inline-flex items-center justify-center text-ks-white bg-ks-secondary/80 border-2 border-ks-secondary rounded-full hover:bg-ks-secondary mt-4 px-5"
+                    >
+                        {isLoading ? "...." : "APPLY"}
+                    </motion.button>
+                    <motion.button
+                        whileTap={{ scale: 0.9 }}
+                        type="reset"
+                        className=" group/button button h-11 text-base relative inline-flex items-center justify-center text-ks-black bg-ks-gray/80 rounded-full mt-4 px-5 hover:bg-ks-gray"
+                    >
+                        CLEAR
+                    </motion.button>
+                </div>
+
+                {isSuccess && (
+                    <div className="col-span-2 bg-ks-primary text-ks-white py-1 px-2 rounded-full font-semibold mx-auto">
+                        <p>Applied Successfully</p>
+                    </div>
+                )}
+
+                {isError && (
+                    <div className="col-span-2 bg-red-600 text-ks-white py-1 px-2 rounded-full font-semibold mx-auto">
+                        <p>Failed to Apply</p>
+                    </div>
+                )}
             </form>
         </div>
     )
