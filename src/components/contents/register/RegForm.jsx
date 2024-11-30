@@ -73,12 +73,12 @@ const RegForm = ({ pCourse }) => {
         }
 
         try {
-            // await sendEmail(inputData)
+            await sendEmail(inputData)
             // console.log("Sending off", inputData)
-            // window.scrollTo(0, 0)
             setIsLoading(true)
             setIsSuccess(true)
             setIsError(false)
+            window.scrollTo(0, 0)
         } catch (error) {
             setIsSuccess(false)
             setIsError(true)
@@ -228,7 +228,7 @@ const RegForm = ({ pCourse }) => {
                         type="submit"
                         className=" group/button button h-11 text-base relative inline-flex items-center justify-center text-ks-white bg-ks-secondary/80 border-2 border-ks-secondary rounded-full hover:bg-ks-secondary mt-4 px-5"
                     >
-                        {isLoading ? "...." : "APPLY"}
+                        {isLoading ? "APPLYING...." : "APPLY"}
                     </motion.button>
                     <motion.button
                         whileTap={{ scale: 0.9 }}
@@ -240,13 +240,13 @@ const RegForm = ({ pCourse }) => {
                 </div>
 
                 {isSuccess && (
-                    <div className="col-span-2 bg-ks-primary text-ks-white py-1 px-2 rounded-full font-semibold mx-auto">
-                        <p>Applied Successfully : OFF</p>
+                    <div className="lg:col-span-2 bg-ks-primary text-ks-white py-1 px-2 rounded-full font-semibold mx-auto">
+                        <p>Applied Successfully</p>
                     </div>
                 )}
 
                 {isError && (
-                    <div className="col-span-2 bg-red-600 text-ks-white py-1 px-2 rounded-full font-semibold mx-auto">
+                    <div className="lg:col-span-2 bg-red-600 text-ks-white py-1 px-2 rounded-full font-semibold mx-auto">
                         <p>Failed to Apply</p>
                     </div>
                 )}
