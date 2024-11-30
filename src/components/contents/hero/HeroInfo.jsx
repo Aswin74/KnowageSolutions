@@ -45,7 +45,7 @@ const HeroInfo = () => {
                             visible: { x: 0, opacity: 1 },
                         }}
                         transition={{
-                            duration: 2,
+                            duration: 1,
                         }}
                         initial="hidden"
                         animate="visible"
@@ -64,7 +64,7 @@ const HeroInfo = () => {
                             visible: { x: 0, opacity: 1 },
                         }}
                         transition={{
-                            duration: 2,
+                            duration: 1,
                         }}
                         initial="hidden"
                         animate="visible"

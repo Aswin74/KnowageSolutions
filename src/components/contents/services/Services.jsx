@@ -20,8 +20,12 @@ const Card = ({ className, img, title, text }) => {
     // Reusable Card Component for below
     return (
         <motion.div
+            variants={{ hidden: { scale: 0 }, visible: { scale: 1 } }}
+            transition={{ type: "spring", duration: 1 }}
+            initial="hidden"
+            animate="visible"
             className={`${className} h-28 flex p-3 items-center backdrop-blur-[2px] bg-ks-black/50
-			border-2 border-stroke-tint shadow-md shadow-cyan-300/80 rounded-3xl overflow-hidden`}
+        border-2 border-stroke-tint shadow-md shadow-cyan-300/80 rounded-3xl overflow-hidden`}
         >
             <img
                 src={img}

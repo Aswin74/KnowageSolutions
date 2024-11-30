@@ -54,10 +54,14 @@ const Counter = () => {
                 }, [spring, isVisible])
 
                 return (
-                    <div
+                    <motion.div
                         ref={counterRef}
                         key={item.id}
                         className="grid place-items-center p-3"
+                        initial={{ opacity: 0, translateY: 50 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true, amount: 0.4 }}
                     >
                         <motion.h3 className="text-ks-secondary font-bold text-3xl md:text-4xl">
                             {springNum}+
@@ -66,7 +70,7 @@ const Counter = () => {
                             {item.title}
                         </p>
                         {/* <div className="h-1 w-full bg-ks-primary rounded-full" /> */}
-                    </div>
+                    </motion.div>
                 )
             })}
         </div>

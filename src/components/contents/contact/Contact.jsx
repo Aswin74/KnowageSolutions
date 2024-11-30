@@ -1,4 +1,4 @@
-import React from "react"
+import { motion } from "framer-motion"
 import Section from "../../Section"
 import Heading from "../../Heading"
 import { BottomLine } from "../../../assets/design/BackgroudDesigns"
@@ -29,7 +29,18 @@ const Contact = () => {
     return (
         <Section id="contact" className="bg-waveLg">
             <div className="realtive flex max-md:flex-col container mb-28 pt-15">
-                <div className="max-w-[29rem]">
+                <motion.div
+                    variants={{
+                        hidden: { x: -100, opacity: 0 },
+                        visible: { x: 0, opacity: 1 },
+                    }}
+                    transition={{
+                        duration: 1,
+                    }}
+                    initial="hidden"
+                    animate="visible"
+                    className="max-w-[29rem]"
+                >
                     <Heading
                         title="Feeling Confused? Contact&nbsp;Us&nbsp;Now"
                         className="max-md:mx-auto max-md:text-center text-ks-white"
@@ -56,10 +67,21 @@ const Contact = () => {
                         future is our priority.
                     </p>
                     <Button to="tel:+919035015369">Contact Us Now</Button>
-                </div>
+                </motion.div>
 
                 {/* Contact Circle */}
-                <div className="lg:mt-24 lg:ml-auto xl:w-[38rem]">
+                <motion.div
+                    variants={{
+                        hidden: { x: 100, opacity: 0, rotateZ: 90 },
+                        visible: { x: 0, opacity: 1, rotateZ: 0 },
+                    }}
+                    transition={{
+                        duration: 1,
+                    }}
+                    initial="hidden"
+                    animate="visible"
+                    className="lg:mt-24 lg:ml-auto xl:w-[38rem]"
+                >
                     <div
                         className="relative left-1/2 flex w-[22rem] aspect-square border-2 border-stroke-tint 
             rounded-full -translate-x-1/2 scale-75 md:scale-100"
@@ -109,7 +131,7 @@ const Contact = () => {
 
                         <LeftCurve />
                     </div>
-                </div>
+                </motion.div>
             </div>
 
             <BottomLine />
