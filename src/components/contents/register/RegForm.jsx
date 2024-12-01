@@ -20,7 +20,7 @@ const RegForm = ({ pCourse }) => {
 
     const [isSuccess, setIsSuccess] = useState(false)
     const [isError, setIsError] = useState(false)
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(false)
 
     const service_id = import.meta.env.VITE_EMAIL_JS_SERVICE_ID
     const template_id = import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID
