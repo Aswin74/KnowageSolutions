@@ -4,7 +4,7 @@ import { ScrollParallax } from "react-just-parallax"
 
 import Section from "../../Section"
 import Button from "../../Button"
-import { curve, darkLogo, girl, lightLogo } from "../../../assets"
+import { curve, darkLogo, girl, lightLogo, logo } from "../../../assets"
 import {
     BackgroundCircles,
     BottomLine,
@@ -44,7 +44,7 @@ const Hero = () => {
                         initial={{ translateX: -50, rotateX: 90 }}
                         animate={{ translateX: 0, rotateX: 0 }}
                         transition={{ duration: 1 }}
-                        className="max-lg:h-[100vh] grid place-content-center my-auto pl-10"
+                        className="max-lg:h-[100vh] grid place-content-center max-md:place-items-center my-auto max-md:px-2 lg:pl-10"
                     >
                         <h1 className="hlarge uppercase mb-3 text-ks-white ">
                             Study&nbsp;in&nbsp;
@@ -54,7 +54,7 @@ const Hero = () => {
                             &nbsp;Abroad
                         </h1>
 
-                        <p className="body-1 text-balance text-ks-white/90 mx-auto">
+                        <p className="body-1 max-md:text-center text-ks-white/90 mx-auto">
                             We provide best universities / colleges with
                             Affiliation, Accrediation and all Approvals. 100%
                             Placements and Internships.
@@ -63,16 +63,27 @@ const Hero = () => {
                         <Button
                             to="/courses"
                             px="px-16 lg:px-20"
-                            className="mt-4"
+                            className="my-4"
                         >
                             See Courses
                         </Button>
                     </motion.div>
 
                     {/* 3D section */}
-                    <div className="h-screen grid grid-cols-1">
+                    <div className="h-screen grid grid-cols-1 max-md:hidden">
                         <Hero3D />
                     </div>
+
+                    <ScrollParallax>
+                        <div className="w-[100%]">
+                            <motion.img
+                                animate={{ scale: [0.9, 1, 0.9] }}
+                                transition={{ repeat: Infinity, duration: 3 }}
+                                src={logo}
+                                className="h-20 -mt-24 bg-ks-white rounded-full p-2 mx-auto lg:hidden"
+                            />
+                        </div>
+                    </ScrollParallax>
                 </motion.div>
             </div>
 

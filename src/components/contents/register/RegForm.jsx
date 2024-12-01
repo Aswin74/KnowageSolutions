@@ -20,7 +20,7 @@ const RegForm = ({ pCourse }) => {
 
     const [isSuccess, setIsSuccess] = useState(false)
     const [isError, setIsError] = useState(false)
-    const [isLoading, setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useState(true)
 
     const service_id = import.meta.env.VITE_EMAIL_JS_SERVICE_ID
     const template_id = import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID
@@ -36,18 +36,18 @@ const RegForm = ({ pCourse }) => {
     // Sending mail
     const handleSubmit = async (e) => {
         e.preventDefault()
-        // setUserName("")
-        // setUserName("")
-        // setUserEmail("")
-        // setUserPhone("")
-        // setUserDistrict("")
-        // setUserState("")
-        // setUserAddress("")
-        // setUserPincode("")
-        // setUserDOB("")
-        // setUserGender("")
-        // setSelectedCourse("")
-        // setUserComments("")
+        setUserName("")
+        setUserName("")
+        setUserEmail("")
+        setUserPhone("")
+        setUserDistrict("")
+        setUserState("")
+        setUserAddress("")
+        setUserPincode("")
+        setUserDOB("")
+        setUserGender("")
+        setSelectedCourse("")
+        setUserComments("")
 
         setIsSuccess(false)
         setIsError(false)
@@ -226,14 +226,22 @@ const RegForm = ({ pCourse }) => {
                     <motion.button
                         whileTap={{ scale: 0.9 }}
                         type="submit"
-                        className=" group/button button h-11 text-base relative inline-flex items-center justify-center text-ks-white bg-ks-secondary/80 border-2 border-ks-secondary rounded-full hover:bg-ks-secondary mt-4 px-5"
+                        disabled={isLoading}
+                        className={`group/button button h-11 text-base relative inline-flex items-center justify-center ${
+                            isLoading
+                                ? "disabled:bg-ks-secondary/50"
+                                : " bg-ks-secondary/80"
+                        } text-ks-white border-2 border-ks-secondary rounded-full hover:bg-ks-secondary mt-4 px-5`}
                     >
-                        {isLoading ? "APPLYING...." : "APPLY"}
+                        {isLoading ? "...." : "APPLY"}
                     </motion.button>
                     <motion.button
                         whileTap={{ scale: 0.9 }}
                         type="reset"
-                        className=" group/button button h-11 text-base relative inline-flex items-center justify-center text-ks-black bg-ks-gray/80 rounded-full mt-4 px-5 hover:bg-ks-gray"
+                        disabled={isLoading}
+                        className={`group/button button h-11 text-base relative inline-flex items-center justify-center ${
+                            isLoading ? "opacity-0" : "opacity-100"
+                        }  bg-ks-gray/80 text-ks-black rounded-full mt-4 px-5 hover:bg-ks-gray`}
                     >
                         CLEAR
                     </motion.button>

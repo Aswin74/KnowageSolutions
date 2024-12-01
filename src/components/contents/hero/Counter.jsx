@@ -18,10 +18,11 @@ const Counter = () => {
                         if (entry.isIntersecting) {
                             setIsVisible(true)
                             spring.set(item.num)
-                        } else {
-                            setIsVisible(false)
-                            spring.set(0)
                         }
+                        // else {
+                        //     setIsVisible(false)
+                        //     spring.set(0)
+                        // }
                     })
                 }
 
