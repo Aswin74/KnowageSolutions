@@ -13,7 +13,7 @@ const RegisterInfo = () => {
                     title="Welcome to Knowage"
                     className="text-ks-secondary"
                 />
-                <p className="text-ks-gray">
+                <p className="text-ks-white">
                     Embark on your learning journey with us. Register now to
                     explore top-notch courses and unlock your potential.
                 </p>

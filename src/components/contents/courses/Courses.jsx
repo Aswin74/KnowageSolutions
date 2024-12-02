@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 const Courses = () => {
     const [selectedCourse, setSelectedCourse] = useState("Medical")
     const [addOn, setAddOn] = useState(false)
-    const [selectedAddOn, setSelectedAddOn] = useState("BCom")
+    const [selectedAddOn, setSelectedAddOn] = useState("Com")
 
     function handleSelect(e) {
         const selected = e.target.value

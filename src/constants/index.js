@@ -99,19 +99,19 @@ export const contactApps = [
         svg: gmailSvg,
         url: "mailto:knowageinternational@gmail.com",
     },
-    // {
-    //     id: "4",
-    //     title: "youtube",
-    //     icon: youtube,
-    //     svg: youtubeSvg,
-    //     url: "https://www.youtube.com/@knowage_international",
-    // },
     {
         id: "4",
+        title: "youtube",
+        icon: youtube,
+        svg: youtubeSvg,
+        url: "https://www.youtube.com/@knowage_international",
+    },
+    {
+        id: "5",
         title: "threads",
         icon: threads,
         svg: threadsSvg,
-        url: "#",
+        url: "https://www.threads.net/@knowage_services",
     },
 ]
 
@@ -130,7 +130,12 @@ export const counters = [
         id: 3,
         num: 1000,
         title: "Colleges",
-    },
+    },{
+        id: 4,
+        num: 1000,
+        title: "Admissions",
+    }
+    
 ]
 
 export const heroCourses =[{
@@ -158,7 +163,7 @@ export const courses = [
             },
             {
                 id: 2,
-                name: "B.Vetinary Science",
+                name: "Vetinary Science",
                 icon: Medical,
             },
             {
@@ -216,7 +221,7 @@ export const courses = [
             },
             {
                 id: 6,
-                name: "B.Pharm",
+                name: "Pharmacy",
                 icon: Pharmacy,
             },
             {
@@ -229,27 +234,27 @@ export const courses = [
         AlliedHealthScience: [
             {
                 id: 1,
-                name: "B.Sc Cardiac Technology",
+                name: "Cardiac Technology",
                 icon: Paramedical,
             },
             {
                 id: 2,
-                name: "B.Sc Perfusion Technology",
+                name: "Perfusion Technology",
                 icon: Paramedical,
             },
             {
                 id: 3,
-                name: "B.Sc Respiratory Technology",
+                name: "Respiratory Technology",
                 icon: Physiotherapy,
             },
             {
                 id: 4,
-                name: "B.Sc Renal Technology",
+                name: "Renal Technology",
                 icon: Paramedical,
             },
             {
                 id: 5,
-                name: "B.Sc Anaesthesia & Operation technology",
+                name: "Anaesthesia & Operation technology",
                 icon: Paramedical,
             },
             {
@@ -259,47 +264,47 @@ export const courses = [
             },
             {
                 id: 7,
-                name: "B.Sc Occupation Technology",
+                name: "Occupation Technology",
                 icon: Pharmacy,
             },
             {
                 id: 8,
-                name: "B.Sc Medical Lab Technology",
+                name: "Medical Lab Technology",
                 icon: Pharmacy,
             },
             {
                 id: 9,
-                name: "B.Sc Medical Imaging/Radiology",
+                name: "Medical Imaging/Radiology",
                 icon: Pharmacy,
             },
             {
                 id: 10,
-                name: "B.Sc Radiotherapy",
+                name: "Radiotherapy",
                 icon: Pharmacy,
             },
             {
                 id: 11,
-                name: "B.Sc Physician Assistant",
+                name: "Physician Assistant",
                 icon: Pharmacy,
             },
             {
                 id: 12,
-                name: "B.Sc Optometry",
+                name: "Optometry",
                 icon: Pharmacy,
             },
             {
                 id: 13,
-                name: "B.Sc Neuro Science",
+                name: "Neuro Science",
                 icon: Pharmacy,
             },
             {
                 id: 14,
-                name: "B.Sc Nuclear Medicine",
+                name: "Nuclear Medicine",
                 icon: Pharmacy,
             },
             {
                 id: 15,
-                name: "B.Sc Emergency Medicine",
+                name: "Emergency Medicine",
                 icon: Pharmacy,
             },
         ],
@@ -307,27 +312,27 @@ export const courses = [
         AppliedScience: [
             {
                 id: 1,
-                name: "B.Sc Agriculture",
+                name: "Agriculture",
                 icon: Ayurveda,
             },
             {
                 id: 2,
-                name: "B.Sc Forensic",
+                name: "Forensic",
                 icon: Ayurveda,
             },
             {
                 id: 3,
-                name: "B.Sc Virology",
+                name: "Virology",
                 icon: Ayurveda,
             },
             {
                 id: 4,
-                name: "B.Sc Food & Nutrition",
+                name: "Food & Nutrition",
                 icon: Ayurveda,
             },
             {
                 id: 5,
-                name: "B.Sc Food Technology",
+                name: "Food Technology",
                 icon: Ayurveda,
             },
             {
@@ -337,47 +342,47 @@ export const courses = [
             },
             {
                 id: 7,
-                name: "B.Sc Occupation Technology",
+                name: "Occupation Technology",
                 icon: Pharmacy,
             },
             {
                 id: 8,
-                name: "B.Sc Medical Lab Technology",
+                name: "Medical Lab Technology",
                 icon: Pharmacy,
             },
             {
                 id: 9,
-                name: "B.Sc Medical Imaging/Radiology",
+                name: "Medical Imaging/Radiology",
                 icon: Pharmacy,
             },
             {
                 id: 10,
-                name: "B.Sc Radiotherapy",
+                name: "Radiotherapy",
                 icon: Pharmacy,
             },
             {
                 id: 11,
-                name: "B.Sc Physician Assistant",
+                name: "Physician Assistant",
                 icon: Pharmacy,
             },
             {
                 id: 12,
-                name: "B.Sc Optometry",
+                name: "Optometry",
                 icon: Pharmacy,
             },
             {
                 id: 13,
-                name: "B.Sc Neuro Science",
+                name: "Neuro Science",
                 icon: Pharmacy,
             },
             {
                 id: 14,
-                name: "B.Sc Nuclear Medicine",
+                name: "Nuclear Medicine",
                 icon: Pharmacy,
             },
             {
                 id: 15,
-                name: "B.Sc Emergency Medicine",
+                name: "Emergency Medicine",
                 icon: Pharmacy,
             },
         ],
@@ -385,27 +390,27 @@ export const courses = [
         Designing: [
             {
                 id: 1,
-                name: "B.Arch",
+                name: "Arch",
                 icon: Designing,
             },
             {
                 id: 2,
-                name: "B.Designing",
+                name: "Designing",
                 icon: Designing,
             },
             {
                 id: 3,
-                name: "B.Sc Interior Design",
+                name: "Interior Design",
                 icon: Designing,
             },
             {
                 id: 4,
-                name: "B.Sc Fashion Design",
+                name: "Fashion Design",
                 icon: Designing,
             },
             {
                 id: 5,
-                name: "B.Visual Arts",
+                name: "Visual Arts",
                 icon: Designing,
             },
             {
@@ -570,7 +575,7 @@ export const courses = [
 ]
 
 export const addOnCourses =[{
-    BCom: [
+    Com: [
         {
             id: 1,
             name: "Aviation",
@@ -639,7 +644,7 @@ export const addOnCourses =[{
         
     ],
 
-    BBA: [
+    BA: [
         {
             id: 1,
             name: "Aviation",
@@ -692,7 +697,7 @@ export const addOnCourses =[{
         },        
     ],
 
-    BCA: [
+    CA: [
         {
             id: 1,
             name: "Arificial Intelligence",
@@ -773,10 +778,16 @@ export const address = [
         url: "tel:+919035015369",
     },
     {
-        title: "phone1",
+        title: "phone2",
         icon: phoneSvg,
         text: "+91 7736201864",
         url: "tel:+917736201864",
+    },
+    {
+        title: "phone3",
+        icon: phoneSvg,
+        text: "+91 9567834963",
+        url: "tel:+919567834963",
     },
     {
         title: "mail",

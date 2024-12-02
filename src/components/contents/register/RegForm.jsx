@@ -4,6 +4,7 @@ import { sendEmail } from "../../../constants/functions"
 import Button from "../../Button"
 import InputBox from "../../InputBox"
 import Heading from "../../Heading"
+import { loading } from "../../../assets"
 
 const RegForm = ({ pCourse }) => {
     const [userName, setUserName] = useState("")
@@ -15,6 +16,7 @@ const RegForm = ({ pCourse }) => {
     const [userPincode, setUserPincode] = useState("")
     const [userDOB, setUserDOB] = useState("")
     const [userGender, setUserGender] = useState("")
+    const [courseType, setCourseType] = useState("")
     const [selectedCourse, setSelectedCourse] = useState("")
     const [userComments, setUserComments] = useState("")
 
@@ -46,6 +48,7 @@ const RegForm = ({ pCourse }) => {
         setUserPincode("")
         setUserDOB("")
         setUserGender("")
+        setCourseType("")
         setSelectedCourse("")
         setUserComments("")
 
@@ -67,6 +70,7 @@ const RegForm = ({ pCourse }) => {
                 userPincode: userPincode,
                 userDOB: userDOB,
                 userGender: userGender,
+                courseType: courseType,
                 selectedCourse: selectedCourse,
                 userComments: userComments,
             },
@@ -100,6 +104,7 @@ const RegForm = ({ pCourse }) => {
         setUserPincode("")
         setUserDOB("")
         setUserGender("")
+        setCourseType("")
         setSelectedCourse("")
         setUserComments("")
         setIsSuccess(false)
@@ -202,8 +207,18 @@ const RegForm = ({ pCourse }) => {
                 />
 
                 <InputBox
+                    label="Degree"
+                    dropDown
+                    dropData={["PG (Masters)", "UG (Bachelors)"]}
+                    value={courseType}
+                    onChange={(e) => {
+                        setCourseType(e.target.value)
+                    }}
+                />
+
+                <InputBox
                     label="Course"
-                    className="lg:col-span-2"
+                    className=""
                     value={selectedCourse}
                     onChange={(e) => {
                         setSelectedCourse(e.target.value)
@@ -233,7 +248,16 @@ const RegForm = ({ pCourse }) => {
                                 : " bg-ks-secondary/80"
                         } text-ks-white border-2 border-ks-secondary rounded-full hover:bg-ks-secondary mt-4 px-5`}
                     >
-                        {isLoading ? "...." : "APPLY"}
+                        {isLoading ? (
+                            <motion.img
+                                animate={{ rotate: [0, 360] }}
+                                transition={{ duration: 2, repeat: Infinity }}
+                                src={loading}
+                                className="h-7"
+                            />
+                        ) : (
+                            "APPLY"
+                        )}
                     </motion.button>
                     <motion.button
                         whileTap={{ scale: 0.9 }}

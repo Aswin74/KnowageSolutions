@@ -9,26 +9,26 @@ import { LeftCurve } from "../../../assets/design/ContactCurve"
 
 const QUESTIONS = [
     {
-        text: "What to do after +2?",
+        text: "Top Universities and colleges",
     },
     {
-        text: "Which course should I pursue?",
+        text: "Hassle free admission process",
     },
     {
-        text: "Which course is best for me?",
+        text: "100% placement assistance",
     },
     {
-        text: "What are the job scopes of each courses?",
+        text: "End to end free counselling",
     },
     {
-        text: "Which college should I select?",
+        text: "Pre and post admission support",
     },
 ]
 
 const Contact = () => {
     return (
         <Section id="contact" className="bg-waveLg">
-            <div className="realtive flex max-md:flex-col container mb-28 pt-15">
+            <div className="realtive flex max-md:flex-col container mb-28 pt-16">
                 <motion.div
                     variants={{
                         hidden: { x: -100, opacity: 0 },
@@ -39,11 +39,11 @@ const Contact = () => {
                     }}
                     initial="hidden"
                     animate="visible"
-                    className="max-w-[29rem]"
+                    className="max-w-[30rem]"
                 >
                     <Heading
-                        title="Feeling Confused? Contact&nbsp;Us&nbsp;Now"
-                        className="max-md:mx-auto max-md:text-center text-ks-secondary"
+                        title="Why Knowage?"
+                        className="max-md:mx-auto text-ks-secondary"
                     />
 
                     <ul className="max-w-[24rem] mb-4">
@@ -53,18 +53,17 @@ const Contact = () => {
                                 className="flex items-start leading-10"
                             >
                                 <img src={bullet} className="mr-2" />
-                                <span className="text-lg lg:text-xl text-ks-white">
+                                <span className="text-base lg:text-xl text-ks-white">
                                     {ques.text}
                                 </span>
                             </li>
                         ))}
                     </ul>
 
-                    <p className="mb-3">
-                        Don't have answers?
-                        <br />
-                        Don't worry we'll help you through the process. Your
-                        future is our priority.
+                    <p className="mb-3 text-ks-white w-full">
+                        Knowage International is India’s leading educational
+                        consultancy group, dedicated to empowering countless
+                        students in realizing their dream career paths.
                     </p>
                     <Button to="tel:+919035015369">Contact Us Now</Button>
                 </motion.div>
@@ -108,12 +107,12 @@ const Contact = () => {
                                 <li
                                     key={app.id}
                                     className={`absolute top-0 left-1/2 h-1/2 -ml-[2.5rem]
-                  origin-bottom rotate-${index * 72}`}
+                  origin-bottom rotate-${index * 60}`}
                                 >
                                     <div
                                         className={`relative -top-[0.8rem] flex-[3.2rem]
                    border-2 bg-ks-white border-stroke-tint rounded-xl -rotate-${
-                       index * 72
+                       index * 60
                    } hover:scale-110 active:shadow-lg active:shadow-stroke-tint transition-transform duration-200 `}
                                     >
                                         <a href={app.url} target="_blank">
@@ -128,13 +127,10 @@ const Contact = () => {
                                 </li>
                             ))}
                         </ul>
-
-                        <LeftCurve />
                     </div>
+                    <LeftCurve />
                 </motion.div>
             </div>
-
-            <BottomLine />
         </Section>
     )
 }

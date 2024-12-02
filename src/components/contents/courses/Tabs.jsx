@@ -37,9 +37,9 @@ const Tabs = ({
                     onChange={handleAddOn}
                     {...props}
                 >
-                    <option value="BCom">B.Com</option>
-                    <option value="BBA">BBA (Dual)</option>
-                    <option value="BCA">BCA (Triple)</option>
+                    <option value="Com">Commerce</option>
+                    <option value="BA">Bussiness Administration (Dual)</option>
+                    <option value="CA">Computer Application (Triple)</option>
                 </select>
             )}
         </div>

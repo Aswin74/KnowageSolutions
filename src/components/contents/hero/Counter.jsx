@@ -4,7 +4,7 @@ import { motion, useSpring } from "framer-motion"
 
 const Counter = () => {
     return (
-        <div className="grid grid-cols-3 place-items-center">
+        <div className="grid grid-cols-2 place-items-center lg:grid-cols-4">
             {counters.map((item) => {
                 const spring = useSpring(0, { duration: 2000 })
                 const [springNum, setSpringNum] = useState(0)

@@ -50,7 +50,55 @@ textarea {
     @apply bg-ks-gray/80 border border-gray-300 text-ks-black rounded-lg outline-ks-secondary focus:ring-ks-secondary focus:border-ks-secondary block w-full p-3;
 }
 
-.rotate-72 {
+.rotate-60 {
+    @apply rotate-[60deg];
+}
+
+.rotate-120 {
+    @apply rotate-[120deg];
+}
+
+.rotate-180 {
+    @apply rotate-[180deg];
+}
+
+.rotate-240 {
+    @apply rotate-[240deg];
+}
+
+.rotate-300 {
+    @apply rotate-[300deg];
+}
+
+.rotate-360 {
+    @apply rotate-[360deg];
+}
+
+.-rotate-60 {
+    @apply -rotate-[60deg];
+}
+
+.-rotate-120 {
+    @apply -rotate-[120deg];
+}
+
+.-rotate-180 {
+    @apply -rotate-[180deg];
+}
+
+.-rotate-240 {
+    @apply -rotate-[240deg];
+}
+
+.-rotate-300 {
+    @apply -rotate-[300deg];
+}
+
+.-rotate-360 {
+    @apply -rotate-[360deg];
+}
+
+/* .rotate-72 {
     @apply rotate-[72deg];
 }
 
@@ -88,4 +136,4 @@ textarea {
 
 .-rotate-360 {
     @apply -rotate-[360deg];
-}
+} */
