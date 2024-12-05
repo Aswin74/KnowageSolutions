@@ -127,8 +127,8 @@ const Contact = () => {
                                 </li>
                             ))}
                         </ul>
+                        <LeftCurve />
                     </div>
-                    <LeftCurve />
                 </motion.div>
             </div>
         </Section>

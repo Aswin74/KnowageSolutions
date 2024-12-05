@@ -1,11 +1,17 @@
 import {
+    Andhra,
+    Bangalore,
+    Chennai,
+    Coimbatore,
     facebook,
     fbSvg,
     gmail,
     gmailSvg,
     instagram,
     instagramSvg,
+    Kerala,
     locationSvg,
+    Mangalore,
     phoneSvg,
     threads,
     threadsSvg,
@@ -31,7 +37,6 @@ import {
     Pharmacy,
     Physiotherapy,
 } from "../assets/courses"
-
 
 // Exports
 
@@ -67,6 +72,39 @@ export const navigation = [
         title: "Register",
         url: "/register",
         onlyMobile: true,
+    },
+]
+
+export const address = [
+    {
+        title: "location",
+        icon: locationSvg,
+        text: "No.178/B, 1st Floor, 3rd Main Road, 2nd Cross, Maruthi Nagar, Yelahanka, Begaluru-560064",
+        url: "#location",
+    },
+    {
+        title: "phone1",
+        icon: phoneSvg,
+        text: "+91 9035015369",
+        url: "tel:+919035015369",
+    },
+    {
+        title: "phone2",
+        icon: phoneSvg,
+        text: "+91 7736201864",
+        url: "tel:+917736201864",
+    },
+    {
+        title: "phone3",
+        icon: phoneSvg,
+        text: "+91 9567834963",
+        url: "tel:+919567834963",
+    },
+    {
+        title: "mail",
+        icon: gmailSvg,
+        text: "knowageinternational@gmail.com",
+        url: "mailto:knowageinternational@gmail.com",
     },
 ]
 
@@ -130,28 +168,32 @@ export const counters = [
         id: 3,
         num: 1000,
         title: "Colleges",
-    },{
+    },
+    {
         id: 4,
         num: 1000,
         title: "Admissions",
-    }
-    
+    },
 ]
 
-export const heroCourses =[{
-    name:"Medical",
-    icon:Medical,
-},{
-    name:"Engineering",
-    icon:Engineering,
-},{
-    name:"Paramedical",
-    icon:Paramedical,
-},{
-    name:"Management",
-    icon:Management,
-},]
-
+export const heroCourses = [
+    {
+        name: "Medical",
+        icon: Medical,
+    },
+    {
+        name: "Engineering",
+        icon: Engineering,
+    },
+    {
+        name: "Paramedical",
+        icon: Paramedical,
+    },
+    {
+        name: "Management",
+        icon: Management,
+    },
+]
 
 export const courses = [
     {
@@ -574,225 +616,240 @@ export const courses = [
     },
 ]
 
-export const addOnCourses =[{
-    Com: [
-        {
-            id: 1,
-            name: "Aviation",
-            icon: AddOn,
-        },
-        {
-            id: 2,
-            name: "Logistics",
-            icon: AddOn,
-        },
-        {
-            id: 3,
-            name: "Travel & Tourism",
-            icon: AddOn,
-        },
-        {
-            id: 4,
-            name: "Electrical & Electronic",
-            icon: AddOn,
-        },
-        {
-            id: 5,
-            name: "Finance",
-            icon: AddOn,
-        },
-        {
-            id: 6,
-            name: "Taxation",
-            icon: AddOn,
-        },
-        {
-            id: 7,
-            name: "Auditing",
-            icon: AddOn,
-        },
-        {
-            id: 8,
-            name: "ACCA",
-            icon: AddOn,
-        },
-        {
-            id: 9,
-            name: "Digital Marketing",
-            icon: AddOn,
-        },
-        {
-            id: 10,
-            name: "Business Analytics",
-            icon: AddOn,
-        },
-        {
-            id: 11,
-            name: "Stock market",
-            icon: AddOn,
-        },
-        {
-            id: 12,
-            name: "Data analytics",
-            icon: AddOn,
-        },
-        {
-            id: 13,
-            name: "LAW",
-            icon: Law,
-        },
-        
-    ],
+export const addOnCourses = [
+    {
+        Com: [
+            {
+                id: 1,
+                name: "Aviation",
+                icon: AddOn,
+            },
+            {
+                id: 2,
+                name: "Logistics",
+                icon: AddOn,
+            },
+            {
+                id: 3,
+                name: "Travel & Tourism",
+                icon: AddOn,
+            },
+            {
+                id: 4,
+                name: "Electrical & Electronic",
+                icon: AddOn,
+            },
+            {
+                id: 5,
+                name: "Finance",
+                icon: AddOn,
+            },
+            {
+                id: 6,
+                name: "Taxation",
+                icon: AddOn,
+            },
+            {
+                id: 7,
+                name: "Auditing",
+                icon: AddOn,
+            },
+            {
+                id: 8,
+                name: "ACCA",
+                icon: AddOn,
+            },
+            {
+                id: 9,
+                name: "Digital Marketing",
+                icon: AddOn,
+            },
+            {
+                id: 10,
+                name: "Business Analytics",
+                icon: AddOn,
+            },
+            {
+                id: 11,
+                name: "Stock market",
+                icon: AddOn,
+            },
+            {
+                id: 12,
+                name: "Data analytics",
+                icon: AddOn,
+            },
+            {
+                id: 13,
+                name: "LAW",
+                icon: Law,
+            },
+        ],
 
-    BA: [
-        {
-            id: 1,
-            name: "Aviation",
-            icon: AddOn,
-        },
-        {
-            id: 2,
-            name: "Logistics",
-            icon: AddOn,
-        },
-        {
-            id: 3,
-            name: "Travel & Tourism",
-            icon: AddOn,
-        },
-        {
-            id: 4,
-            name: "Port Management",
-            icon: AddOn,
-        },
-        {
-            id: 5,
-            name: "Entrepreneurship",
-            icon: AddOn,
-        },
-        {
-            id: 6,
-            name: "International Bussiness",
-            icon: AddOn,
-        },
-        {
-            id: 7,
-            name: "Hospital Administration",
-            icon: AddOn,
-        },
-        {
-            id: 8,
-            name: "Medical Tourism",
-            icon: AddOn,
-        },
-        {
-            id: 9,
-            name: "Digital Marketing",
-            icon: AddOn,
-        },
-        {
-            id: 10,
-            name: "Data Analytics",
-            icon: AddOn,
-        },        
-    ],
+        BA: [
+            {
+                id: 1,
+                name: "Aviation",
+                icon: AddOn,
+            },
+            {
+                id: 2,
+                name: "Logistics",
+                icon: AddOn,
+            },
+            {
+                id: 3,
+                name: "Travel & Tourism",
+                icon: AddOn,
+            },
+            {
+                id: 4,
+                name: "Port Management",
+                icon: AddOn,
+            },
+            {
+                id: 5,
+                name: "Entrepreneurship",
+                icon: AddOn,
+            },
+            {
+                id: 6,
+                name: "International Bussiness",
+                icon: AddOn,
+            },
+            {
+                id: 7,
+                name: "Hospital Administration",
+                icon: AddOn,
+            },
+            {
+                id: 8,
+                name: "Medical Tourism",
+                icon: AddOn,
+            },
+            {
+                id: 9,
+                name: "Digital Marketing",
+                icon: AddOn,
+            },
+            {
+                id: 10,
+                name: "Data Analytics",
+                icon: AddOn,
+            },
+        ],
 
-    CA: [
-        {
-            id: 1,
-            name: "Arificial Intelligence",
-            icon: Computer,
-        },
-        {
-            id: 2,
-            name: "Robotics",
-            icon: Computer,
-        },
-        {
-            id: 3,
-            name: "Machine Learning",
-            icon: Computer,
-        },
-        {
-            id: 4,
-            name: "Cyber Forensic",
-            icon: Computer,
-        },
-        {
-            id: 5,
-            name: "Cyber Security",
-            icon: Computer,
-        },
-        {
-            id: 6,
-            name: "Ethical Hacking",
-            icon: Computer,
-        },
-        {
-            id: 7,
-            name: "IoT",
-            icon: Computer,
-        },
-        {
-            id: 8,
-            name: "Cloud Computing",
-            icon: Computer,
-        },
-        {
-            id: 9,
-            name: "Game Design",
-            icon: Computer,
-        },
-        {
-            id: 10,
-            name: "Data Analytics",
-            icon: Computer,
-        },  
-        {
-            id: 11,
-            name: "Augmented & Virtual Reality",
-            icon: Computer,
-        }, {
-            id: 12,
-            name: "Graphic Design",
-            icon: Computer,
-        }, {
-            id: 13,
-            name: "Software Development",
-            icon: Computer,
-        },       
-    ],
-}]
+        CA: [
+            {
+                id: 1,
+                name: "Arificial Intelligence",
+                icon: Computer,
+            },
+            {
+                id: 2,
+                name: "Robotics",
+                icon: Computer,
+            },
+            {
+                id: 3,
+                name: "Machine Learning",
+                icon: Computer,
+            },
+            {
+                id: 4,
+                name: "Cyber Forensic",
+                icon: Computer,
+            },
+            {
+                id: 5,
+                name: "Cyber Security",
+                icon: Computer,
+            },
+            {
+                id: 6,
+                name: "Ethical Hacking",
+                icon: Computer,
+            },
+            {
+                id: 7,
+                name: "IoT",
+                icon: Computer,
+            },
+            {
+                id: 8,
+                name: "Cloud Computing",
+                icon: Computer,
+            },
+            {
+                id: 9,
+                name: "Game Design",
+                icon: Computer,
+            },
+            {
+                id: 10,
+                name: "Data Analytics",
+                icon: Computer,
+            },
+            {
+                id: 11,
+                name: "Augmented & Virtual Reality",
+                icon: Computer,
+            },
+            {
+                id: 12,
+                name: "Graphic Design",
+                icon: Computer,
+            },
+            {
+                id: 13,
+                name: "Software Development",
+                icon: Computer,
+            },
+        ],
+    },
+]
 
-export const address = [
+export const popularDestinations = [
     {
-        title: "location",
-        icon: locationSvg,
-        text: "No.178/B, 1st Floor, 3rd Main Road, 2nd Cross, Maruthi Nagar, Yelahanka, Begaluru-560064",
-        url: "#location",
+        image: Coimbatore,
+        destination: "Coimbatore",
+        title: "Study In Coimbatore",
+        description:
+            "Consider studying in Coimbatore for a rewarding academic experience. Known for its esteemed educational institutions, Coimbatore offers a diverse range of programs across various disciplines. With a conducive learning environment and excellent infrastructure, students can benefit from quality education and ample opportunities for personal and professional growth.",
     },
     {
-        title: "phone1",
-        icon: phoneSvg,
-        text: "+91 9035015369",
-        url: "tel:+919035015369",
+        image: Mangalore,
+        destination: "Manglore",
+        title: "Study in Manglore",
+        description:
+            "Mangalore, a rapidly growing city in Karnataka, holds significant importance in the nation. Its convenient access to road, rail, air, and sea transport makes it a favored educational hub.",
     },
     {
-        title: "phone2",
-        icon: phoneSvg,
-        text: "+91 7736201864",
-        url: "tel:+917736201864",
+        image: Chennai,
+        destination: "Chennai",
+        title: "Study In Chennai",
+        description:
+            "Chennai, the capital city of Tamil Nadu, is celebrated as the 'Gateway of South India' and stands as the largest cultural, educational, and economic hub in the region. It is home to some of the most prestigious and revered educational institutions in the country.",
     },
     {
-        title: "phone3",
-        icon: phoneSvg,
-        text: "+91 9567834963",
-        url: "tel:+919567834963",
+        image: Bangalore,
+        destination: "Banglore",
+        title: "Study In Banglore",
+        description:
+            "Bangalore boasts top-tier educational institutions renowned for their excellent placement opportunities. With prestigious medical and engineering colleges, it offers students unparalleled academic prospects in the country. Being the \u0022IT Capital\u0022, Bangalore also provides students with optimal job placement opportunities and exposure, making it an ideal destination for pursuing higher education.",
     },
     {
-        title: "mail",
-        icon: gmailSvg,
-        text: "knowageinternational@gmail.com",
-        url: "mailto:knowageinternational@gmail.com",
+        image: Kerala,
+        destination: "Kerala",
+        title: "Study in Kerala",
+        description:
+            "Kerala, celebrated for its exceptional literacy rate, is a top educational destination. Its well-connected cities like Kochi and Trivandrum offer access to road, rail, air, and sea transport, paired with tranquil surroundings.",
+    },
+    {
+        image: Andhra,
+        destination: "Andhra Pradesh",
+        title: "Study in Andhra Pradesh",
+        description:
+            "Andhra Pradesh, with key cities like Vijayawada and Visakhapatnam, is rapidly evolving as an educational hub. Excellent connectivity through roads, railways, air, and seaports complements its growing academic infrastructure.",
     },
 ]

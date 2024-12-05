@@ -94,7 +94,7 @@ export default {
                 university2: "url('/src/assets/hero/university2.jpg')",
                 waveBg: "url('/src/assets/courses/nonSvg/WaveBg.jpg')",
                 waveLg: "url('/src/assets/courses/nonSvg/WaveLg.jpg')",
-                wave2: "url('/src/assets/Wave2.svg')"
+                wave2: "url('/src/assets/Wave2.svg')",
             },
         },
     },
@@ -125,7 +125,7 @@ export default {
                     "@apply text-[2rem] leading-normal": {},
                 },
                 ".h5": {
-                    "@apply text-xl leading-normal": {},
+                    "@apply text-xl leading-normal font-semibold": {},
                 },
                 ".h6": {
                     "@apply font-semibold text-lg leading-8": {},
@@ -158,9 +158,9 @@ export default {
                     "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
                 },
 
-                ".ks-flipper":{
-                    transform:"rotateY(180deg)"
-                }
+                ".ks-flipper": {
+                    transform: "rotateY(180deg)",
+                },
             })
         }),
     ],

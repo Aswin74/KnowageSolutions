@@ -16,6 +16,7 @@ import Counter from "./Counter"
 import HeroInfo from "./HeroInfo"
 import HeroContact from "./HeroContact"
 import HeroCourses from "./HeroCourses"
+import Destinations from "./Destinations"
 
 const Hero = () => {
     const parallaxRef = useRef(null)
@@ -32,7 +33,7 @@ const Hero = () => {
     return (
         <>
             {/* Landing */}
-            <div className="relative lg:h-[100vh] w-[100vw] overflow-hidden bg-emerald-400">
+            <section className="relative lg:h-[100vh] w-[100vw] overflow-hidden bg-emerald-400">
                 <motion.div
                     initial={{ opacity: 0, rotateX: 90 }}
                     animate={{ opacity: 1, rotateX: 0 }}
@@ -85,27 +86,32 @@ const Hero = () => {
                         </div>
                     </ScrollParallax>
                 </motion.div>
-            </div>
+            </section>
 
             {/* Counter */}
-            <div className="p-7">
+            <section className="p-7">
                 <Counter />
-            </div>
+            </section>
 
             {/* Info */}
-            <div className="py-5 bg-ks-gray">
+            <section className="py-5 bg-ks-gray">
                 <HeroInfo />
-            </div>
+            </section>
 
             {/* Courses */}
-            <div className="lg:my-5">
+            <section className="lg:my-5">
                 <HeroCourses />
-            </div>
+            </section>
+
+            {/* Destinations */}
+            <section className="py-8 bg-ks-gray">
+                <Destinations />
+            </section>
 
             {/* Contact */}
-            <div className=" bg-ks-black">
+            <section className=" bg-ks-black">
                 <HeroContact />
-            </div>
+            </section>
         </>
     )
 }
