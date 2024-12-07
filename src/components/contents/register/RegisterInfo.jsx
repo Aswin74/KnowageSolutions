@@ -7,7 +7,7 @@ import { Interview } from "../../../assets/lottie"
 
 const RegisterInfo = () => {
     return (
-        <div>
+        <>
             <div className="p-10 grid grid-cols-1 place-content-center">
                 <Heading
                     title="Welcome to Knowage"
@@ -23,19 +23,8 @@ const RegisterInfo = () => {
                         className="-mt-40 h-[40rem]"
                     />
                 </ScrollParallax>
-
-                {/* <ScrollParallax>
-                    <div className="w-[100%]">
-                        <motion.img
-                            animate={{ x: [0, 300, 0] }}
-                            transition={{ repeat: Infinity, duration: 6 }}
-                            src={logo}
-                            className="h-28 mt-10 bg-ks-gray rounded-full p-2"
-                        />
-                    </div>
-                </ScrollParallax> */}
             </div>
-        </div>
+        </>
     )
 }
 

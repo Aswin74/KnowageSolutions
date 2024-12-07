@@ -50,6 +50,7 @@ const HeroInfo = () => {
                         initial="hidden"
                         animate="visible"
                         className="order-2 lg:order-1"
+                        aria-disabled
                     >
                         <Lottie
                             className="h-[25rem] "

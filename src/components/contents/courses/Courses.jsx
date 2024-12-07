@@ -28,14 +28,14 @@ const Courses = () => {
     }
 
     return (
-        <div className="bg-waveBg lg:bg-waveLg bg-fixed bg-cover bg-top lg:pt-8">
+        <section className="bg-waveBg lg:bg-waveLg bg-fixed bg-cover bg-top lg:pt-8">
             <div className="container flex flex-col items-center pb-28">
                 <Heading
                     title="COURSES"
                     className="text-ks-white mt-20 lg:mt-15"
                 />
 
-                <menu className="">
+                <menu aria-label="Course Selection">
                     <Tabs
                         selectedCourse={selectedCourse}
                         handleCourses={handleSelect}
@@ -45,7 +45,10 @@ const Courses = () => {
                     />
                 </menu>
                 {addOn && (
-                    <h1 className="text-3xl my-4 font-bold text-ks-gray">
+                    <h1
+                        className="text-3xl my-4 font-bold text-ks-gray"
+                        aria-live="polite"
+                    >
                         {selectedAddOn}
                     </h1>
                 )}
@@ -79,7 +82,7 @@ const Courses = () => {
                         ))}
                 </motion.div>
             </div>
-        </div>
+        </section>
     )
 }
 

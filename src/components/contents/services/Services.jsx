@@ -44,7 +44,7 @@ const Card = ({ className, img, title, text }) => {
 
 const Services = () => {
     return (
-        <div className="bg-waveBg lg:bg-waveLg bg-fixed bg-cover bg-top pt-24">
+        <section className="bg-waveBg lg:bg-waveLg bg-fixed bg-cover bg-top pt-24">
             {/* <Section className="bg-ks-primary_dark/70"> */}
             <div className="container ">
                 <Heading
@@ -121,8 +121,7 @@ max-w-[50rem] mx-auto */}
                 </div>
             </div>
             <BottomLine />
-            {/* </Section> */}
-        </div>
+        </section>
     )
 }
 

@@ -2,15 +2,9 @@ import React, { useEffect, useRef } from "react"
 import { motion, useAnimation, useInView } from "framer-motion"
 import { ScrollParallax } from "react-just-parallax"
 
-import Section from "../../Section"
 import Button from "../../Button"
-import { curve, darkLogo, girl, lightLogo, logo } from "../../../assets"
-import {
-    BackgroundCircles,
-    BottomLine,
-    Gradient,
-} from "../../../assets/design/BackgroudDesigns"
-import Services from "../services/Services"
+import { logo } from "../../../assets"
+
 import Hero3D from "./Hero3D"
 import Counter from "./Counter"
 import HeroInfo from "./HeroInfo"
@@ -19,11 +13,8 @@ import HeroCourses from "./HeroCourses"
 import Destinations from "./Destinations"
 
 const Hero = () => {
-    const parallaxRef = useRef(null)
     const viewRef = useRef(null)
     const isInView = useInView(viewRef, { once: true })
-
-    const mainControls = useAnimation()
 
     useEffect(() => {
         // if (isInView) mainControls.start("visible")
@@ -65,13 +56,17 @@ const Hero = () => {
                             to="/courses"
                             px="px-16 lg:px-20"
                             className="my-4"
+                            aria-label="See all Courses"
                         >
                             See Courses
                         </Button>
                     </motion.div>
 
                     {/* 3D section */}
-                    <div className="h-screen grid grid-cols-1 max-md:hidden">
+                    <div
+                        className="h-screen grid grid-cols-1 max-md:hidden"
+                        aria-disabled
+                    >
                         <Hero3D />
                     </div>
 
@@ -81,7 +76,7 @@ const Hero = () => {
                                 animate={{ scale: [0.9, 1, 0.9] }}
                                 transition={{ repeat: Infinity, duration: 3 }}
                                 src={logo}
-                                className="h-20 -mt-24 bg-ks-white rounded-full p-2 mx-auto lg:hidden"
+                                className="h-20 -mt-28 bg-ks-white rounded-full p-2 mx-auto lg:hidden"
                             />
                         </div>
                     </ScrollParallax>

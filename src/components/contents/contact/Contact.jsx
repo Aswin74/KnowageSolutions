@@ -52,7 +52,11 @@ const Contact = () => {
                                 key={index}
                                 className="flex items-start leading-10"
                             >
-                                <img src={bullet} className="mr-2" />
+                                <img
+                                    src={bullet}
+                                    className="mr-2"
+                                    alt="bullet"
+                                />
                                 <span className="text-base lg:text-xl text-ks-white">
                                     {ques.text}
                                 </span>
@@ -65,7 +69,12 @@ const Contact = () => {
                         consultancy group, dedicated to empowering countless
                         students in realizing their dream career paths.
                     </p>
-                    <Button to="tel:+919035015369">Contact Us Now</Button>
+                    <Button
+                        to="tel:+919035015369"
+                        aria-label="Contact Knowage Now"
+                    >
+                        Contact Us Now
+                    </Button>
                 </motion.div>
 
                 {/* Contact Circle */}
@@ -115,12 +124,18 @@ const Contact = () => {
                        index * 60
                    } hover:scale-110 active:shadow-lg active:shadow-stroke-tint transition-transform duration-200 `}
                                     >
-                                        <a href={app.url} target="_blank">
+                                        <a
+                                            href={app.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label={`Contact us on ${app.title}`}
+                                        >
                                             <img
                                                 className="m-auto"
                                                 // height={20}
                                                 width={80}
                                                 src={app.icon}
+                                                alt={app.title}
                                             />
                                         </a>
                                     </div>

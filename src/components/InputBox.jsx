@@ -11,24 +11,42 @@ const InputBox = ({
 }) => {
     const renderInput = () => (
         <div className={className}>
-            <label className="ks-label">{label}</label>
+            <label className="ks-label" htmlFor={props.id}>
+                {label}
+            </label>
             {!multiline ? (
                 <input
                     className="ks-input"
                     type={type ?? "text"}
+                    id={props.id}
+                    aria-labelledby={props.id}
                     {...props}
                     required
                 />
             ) : (
-                <textarea className="ks-input" {...props} required />
+                <textarea
+                    className="ks-input"
+                    id={props.id}
+                    aria-labelledby={props.id}
+                    {...props}
+                    required
+                />
             )}
         </div>
     )
 
     const renderDropDown = () => (
         <div className={className}>
-            <label className="ks-label">{label}</label>
-            <select className="ks-input" {...props} required>
+            <label className="ks-label" htmlFor={props.id}>
+                {label}
+            </label>
+            <select
+                className="ks-input"
+                id={props.id}
+                aria-labelledby={props.id}
+                {...props}
+                required
+            >
                 <option className="bg-ks-white" value="" disabled>
                     Select
                 </option>

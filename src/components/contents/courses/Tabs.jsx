@@ -14,6 +14,7 @@ const Tabs = ({
                 className="ks-dropDown"
                 value={selectedCourse}
                 onChange={handleCourses}
+                aria-labelledby="Course Dropdown"
                 {...props}
             >
                 <option value="Medical">Medical</option>
@@ -35,6 +36,7 @@ const Tabs = ({
                     className="ks-dropDown"
                     value={selectedAddOn}
                     onChange={handleAddOn}
+                    aria-labelledby="Add On course dropdown"
                     {...props}
                 >
                     <option value="Com">Commerce</option>

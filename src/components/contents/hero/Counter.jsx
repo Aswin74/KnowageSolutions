@@ -64,10 +64,16 @@ const Counter = () => {
                         transition={{ duration: 1 }}
                         viewport={{ once: true, amount: 0.4 }}
                     >
-                        <motion.h3 className="text-ks-secondary font-bold text-3xl md:text-4xl">
+                        <motion.h3
+                            className="text-ks-secondary font-bold text-3xl md:text-4xl"
+                            aria-live="polite"
+                        >
                             {springNum}+
                         </motion.h3>
-                        <p className="text-ks-primary underline underline-offset-4 font-semibold text-base md:text-xl">
+                        <p
+                            className="text-ks-primary underline underline-offset-4 font-semibold text-base md:text-xl"
+                            aria-live="polite"
+                        >
                             {item.title}
                         </p>
                         {/* <div className="h-1 w-full bg-ks-primary rounded-full" /> */}

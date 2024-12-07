@@ -21,7 +21,9 @@ const HeroCourses = () => {
                 ))}
             </div>
 
-            <Button to="/courses">View More</Button>
+            <Button to="/courses" aria-label="View more courses">
+                View More
+            </Button>
         </motion.div>
     )
 }

@@ -51,6 +51,7 @@ const HeroContact = () => {
                         initial="hidden"
                         animate="visible"
                         className="order-2"
+                        aria-disabled
                     >
                         <Lottie
                             className="h-[30rem] "
@@ -79,7 +80,11 @@ const HeroContact = () => {
                             Get in touch with us to know more about our courses
                             and services provided.
                         </p>
-                        <Button to="/contact" className="mt-3 ml-10 lg:ml-3">
+                        <Button
+                            to="/contact"
+                            className="mt-3 ml-10 lg:ml-3"
+                            aria-label="Contact Us"
+                        >
                             Contact Us
                         </Button>
                     </motion.div>

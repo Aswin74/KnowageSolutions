@@ -127,6 +127,7 @@ const RegForm = ({ pCourse }) => {
                 className="p-6 grid lg:grid-cols-2 gap-2 "
             >
                 <InputBox
+                    id="name-input"
                     label="Full Name"
                     value={userName}
                     onChange={(e) => {
@@ -135,6 +136,7 @@ const RegForm = ({ pCourse }) => {
                 />
 
                 <InputBox
+                    id="email-input"
                     label="Email"
                     type="email"
                     value={userEmail}
@@ -144,6 +146,7 @@ const RegForm = ({ pCourse }) => {
                 />
 
                 <InputBox
+                    id="phone-input"
                     label="Phone"
                     value={userPhone}
                     onChange={(e) => {
@@ -152,6 +155,7 @@ const RegForm = ({ pCourse }) => {
                 />
 
                 <InputBox
+                    id="address-input"
                     label="Address"
                     className="lg:col-span-2"
                     value={userAddress}
@@ -163,6 +167,7 @@ const RegForm = ({ pCourse }) => {
 
                 <div className="grid lg:col-span-2 grid-cols-3 gap-2">
                     <InputBox
+                        id="district-input"
                         label="District"
                         value={userDistrict}
                         onChange={(e) => {
@@ -171,6 +176,7 @@ const RegForm = ({ pCourse }) => {
                     />
 
                     <InputBox
+                        id="state-input"
                         label="State"
                         value={userState}
                         onChange={(e) => {
@@ -179,6 +185,7 @@ const RegForm = ({ pCourse }) => {
                     />
 
                     <InputBox
+                        id="pincode-input"
                         label="Pincode"
                         value={userPincode}
                         onChange={(e) => {
@@ -188,6 +195,7 @@ const RegForm = ({ pCourse }) => {
                 </div>
 
                 <InputBox
+                    id="DOB-input"
                     label="DOB"
                     type="date"
                     value={userDOB}
@@ -197,6 +205,7 @@ const RegForm = ({ pCourse }) => {
                 />
 
                 <InputBox
+                    id="gender-input"
                     label="Gender"
                     dropDown
                     dropData={["Male", "Female", "Transgender"]}
@@ -207,6 +216,7 @@ const RegForm = ({ pCourse }) => {
                 />
 
                 <InputBox
+                    id="degree-input"
                     label="Degree"
                     dropDown
                     dropData={["PG (Masters)", "UG (Bachelors)"]}
@@ -217,6 +227,7 @@ const RegForm = ({ pCourse }) => {
                 />
 
                 <InputBox
+                    id="course-input"
                     label="Course"
                     className=""
                     value={selectedCourse}
@@ -226,6 +237,7 @@ const RegForm = ({ pCourse }) => {
                 />
 
                 <InputBox
+                    id="remarks-input"
                     label="Remarks"
                     placeholder="Feel free to share anything you'd like us to know!"
                     className="lg:col-span-2"
@@ -247,6 +259,7 @@ const RegForm = ({ pCourse }) => {
                                 ? "disabled:bg-ks-secondary/50"
                                 : " bg-ks-secondary/80"
                         } text-ks-white border-2 border-ks-secondary rounded-full hover:bg-ks-secondary mt-4 px-5`}
+                        aria-label={isLoading ? "Applying" : "Apply"}
                     >
                         {isLoading ? (
                             <motion.img
@@ -254,6 +267,7 @@ const RegForm = ({ pCourse }) => {
                                 transition={{ duration: 2, repeat: Infinity }}
                                 src={loading}
                                 className="h-7"
+                                alt="loading"
                             />
                         ) : (
                             "APPLY"
@@ -266,19 +280,28 @@ const RegForm = ({ pCourse }) => {
                         className={`group/button button h-11 text-base relative inline-flex items-center justify-center ${
                             isLoading ? "opacity-0" : "opacity-100"
                         }  bg-ks-gray/80 text-ks-black rounded-full mt-4 px-5 hover:bg-ks-gray`}
+                        aria-label={isLoading ? "" : "Clear Fields"}
                     >
                         CLEAR
                     </motion.button>
                 </div>
 
                 {isSuccess && (
-                    <div className="lg:col-span-2 bg-ks-primary text-ks-white py-1 px-2 rounded-full font-semibold mx-auto">
+                    <div
+                        role="status"
+                        aria-live="polite"
+                        className="lg:col-span-2 bg-ks-primary text-ks-white py-1 px-2 rounded-full font-semibold mx-auto"
+                    >
                         <p>Applied Successfully</p>
                     </div>
                 )}
 
                 {isError && (
-                    <div className="lg:col-span-2 bg-red-600 text-ks-white py-1 px-2 rounded-full font-semibold mx-auto">
+                    <div
+                        role="alert"
+                        aria-live="assertive"
+                        className="lg:col-span-2 bg-red-600 text-ks-white py-1 px-2 rounded-full font-semibold mx-auto"
+                    >
                         <p>Failed to Apply</p>
                     </div>
                 )}

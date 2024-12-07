@@ -56,13 +56,20 @@ function Navbar() {
                 className={`fixed top-0 left-0 right-0 z-50 ${
                     navChange ? "bg-ks-white shadow-md" : "bg-transparent"
                 }  transition-all`}
+                role="navigation"
+                aria-label="Main Navigation"
             >
                 <div
                     className={`flex items-center justify-between px-5 lg:px-7.5 ${
                         !navChange ? "bg-gradient-to-b from-emerald-300/70" : ""
                     }`}
                 >
-                    <Link to="/" className="flex items-center  lg:mr-8 ml-2">
+                    <Link
+                        to="/"
+                        role="menuitem"
+                        className="flex items-center lg:mr-8 ml-2"
+                        aria-label="Home"
+                    >
                         <img
                             src={navChange ? darkLogo : lightLogo}
                             className={`pointer-events-none ${
@@ -70,13 +77,6 @@ function Navbar() {
                             }`}
                             alt="Knowage International"
                         />
-                        {/* <p
-              className={`${
-                !navChange ? "text-ks-white" : "text-ks-primary"
-              } font-black uppercase -ml-2 lg:text-lg`}
-            >
-              Knowage
-            </p> */}
                     </Link>
 
                     {/* Responsive Navbar content */}
@@ -116,6 +116,7 @@ function Navbar() {
                                         } lg:leading-5`
                                     }
                                     onClick={handleNavClick}
+                                    aria-label={`Navigate to ${item.title}`}
                                 >
                                     {item.title}
                                 </NavLink>
@@ -127,6 +128,7 @@ function Navbar() {
                         <Button
                             to="/register"
                             className="hidden lg:flex uppercase mr-2"
+                            aria-label="Apply Now"
                         >
                             Apply Now
                         </Button>
@@ -134,6 +136,7 @@ function Navbar() {
                         <Button
                             className="lg:hidden w-10"
                             onClick={handleToggle}
+                            aria-label={isOpen ? "Close Menu" : "Open menu"}
                         >
                             <MenuSvg openNavigation={isOpen} />
                         </Button>
