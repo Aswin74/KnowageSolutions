@@ -24,7 +24,10 @@ const Hero = () => {
     return (
         <>
             {/* Landing */}
-            <section className="relative lg:h-[100vh] w-[100vw] overflow-hidden bg-emerald-400">
+            <section
+                role="landingPage"
+                className="relative lg:h-[100vh] w-[100vw] overflow-hidden bg-emerald-400"
+            >
                 <motion.div
                     initial={{ opacity: 0, rotateX: 90 }}
                     animate={{ opacity: 1, rotateX: 0 }}
@@ -74,7 +77,7 @@ const Hero = () => {
                         <div className="w-[100%]">
                             <motion.img
                                 animate={{ scale: [0.9, 1, 0.9] }}
-                                transition={{ repeat: Infinity, duration: 3 }}
+                                transition={{ repeat: Infinity, duration: 2 }}
                                 src={logo}
                                 className="h-20 -mt-28 bg-ks-white rounded-full p-2 mx-auto lg:hidden"
                             />
@@ -84,27 +87,43 @@ const Hero = () => {
             </section>
 
             {/* Counter */}
-            <section className="p-7">
+            <section
+                role="achievements"
+                aria-label="Achievements"
+                className="p-7"
+            >
                 <Counter />
             </section>
 
             {/* Info */}
-            <section className="py-5 bg-ks-gray">
+            <section
+                role="info"
+                aria-label="What is Next?"
+                className="py-5 bg-ks-gray"
+            >
                 <HeroInfo />
             </section>
 
             {/* Courses */}
-            <section className="lg:my-5">
+            <section role="courses" aria-label="" className="lg:my-5">
                 <HeroCourses />
             </section>
 
             {/* Destinations */}
-            <section className="py-8 bg-ks-gray">
+            <section
+                role="destinations"
+                aria-label="Popular Destinations"
+                className="py-8 bg-ks-gray"
+            >
                 <Destinations />
             </section>
 
             {/* Contact */}
-            <section className=" bg-ks-black">
+            <section
+                role="contact"
+                aria-label="Contact Us"
+                className=" bg-ks-black"
+            >
                 <HeroContact />
             </section>
         </>

@@ -71,7 +71,6 @@ const HeroInfo = () => {
                         animate="visible"
                         className="place-self-start py-10 order-1 lg:order-2"
                     >
-                        {/* <Heading title="What is Next?" /> */}
                         <h1 className="hlarge max-md:ml-8 text-ks-primary mb-4">
                             What is Next ?
                         </h1>

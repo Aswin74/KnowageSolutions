@@ -1,5 +1,6 @@
 import {
     Andhra,
+    Athul,
     Bangalore,
     Chennai,
     Coimbatore,
@@ -10,8 +11,10 @@ import {
     instagram,
     instagramSvg,
     Kerala,
+    Kiran,
     locationSvg,
     Mangalore,
+    Nabeel,
     phoneSvg,
     threads,
     threadsSvg,
@@ -851,5 +854,29 @@ export const popularDestinations = [
         title: "Study in Andhra Pradesh",
         description:
             "Andhra Pradesh, with key cities like Vijayawada and Visakhapatnam, is rapidly evolving as an educational hub. Excellent connectivity through roads, railways, air, and seaports complements its growing academic infrastructure.",
+    },
+]
+
+export const theTeam = [
+    {
+        image: Nabeel,
+        name: "Nabeel Mhd",
+        role: "Co-Founder & CEO",
+        description:
+            "With over 4 Years of Experience in Education Sector, the person who made platform that simplifes the College Searching Process for Postive impact on the education Sector in India & Abroad. His expertise and guidance have helped Countless Students to achieve their educational goals and His leadership Skill and Commitment to excellance is the evident in everything he does.",
+    },
+    {
+        image: Kiran,
+        name: "Kiran S Nair",
+        role: "Co-Founder & Marking Director",
+        description:
+            "He Develop an Overall Plan to Promote Company and Reviewing Applications and Marking Selections for scholarship programs. He is Committed to Helping Students Achieve Their Academic and Career Goals , with Experience Advising for Career Counselling.",
+    },
+    {
+        image: Athul,
+        name: "Athul Raj",
+        role: "Co-Founder & Managing Director",
+        description:
+            "Managing Partner of KNOWAGE INTERNATIONAL, Coming up with the idea Forming a Company and Evaluating its Market size , Who use Internet Platform to grow an audience and gain Awareness for a Brand or Organisation.",
     },
 ]

@@ -36,6 +36,10 @@ import Coimbatore from "./hero/Coimbatore.jpg"
 import Kerala from "./hero/Kerala.jpg"
 import Mangalore from "./hero/Mangalore.jpg"
 
+import Athul from "./about/Athul.jpeg"
+import Kiran from "./about/Kiran.jpg"
+import Nabeel from "./about/Nabeel.jpg"
+
 export {
     logo,
     darkLogo,
@@ -69,4 +73,7 @@ export {
     Coimbatore,
     Kerala,
     Mangalore,
+    Athul,
+    Kiran,
+    Nabeel,
 }
