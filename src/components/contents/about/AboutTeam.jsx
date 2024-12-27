@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { motion, useAnimation } from "framer-motion"
 import Heading from "../../Heading"
 import { theTeam } from "../../../constants"
@@ -7,7 +7,7 @@ import { ScrollParallax } from "react-just-parallax"
 const TeamCard = (props) => {
     return (
         <div
-            className="relative w-72 bg-ks-black text-ks-white shadow-lg shadow-ks-black rounded-lg overflow-hidden"
+            className="relative h-full w-72 bg-ks-black text-ks-white shadow-lg shadow-ks-black rounded-lg overflow-hidden"
             role="card"
             aria-label="member"
         >
@@ -42,7 +42,7 @@ const TeamCard = (props) => {
                         repeat: Infinity,
                         repeatType: "mirror",
                     }}
-                    className="absolute bottom-0 h-20 w-32 rounded bg-gradient-to-b from-ks-gray/10"
+                    className="absolute bottom-0 h-20 w-32 rounded bg-gradient-to-b from-ks-gray/15"
                 />
                 <motion.div
                     animate={{
@@ -50,7 +50,7 @@ const TeamCard = (props) => {
                         translateY: [-10, -25, -30],
                     }}
                     transition={{
-                        duration: 5,
+                        duration: 2,
                         repeat: Infinity,
                         repeatType: "mirror",
                     }}
@@ -62,11 +62,11 @@ const TeamCard = (props) => {
                         translateY: [-10, 0, 5],
                     }}
                     transition={{
-                        duration: 5,
+                        duration: 2,
                         repeat: Infinity,
                         repeatType: "mirror",
                     }}
-                    className="absolute bottom-1/4 left-1/2 h-20 w-28 rounded bg-gradient-to-b from-ks-gray/10"
+                    className="absolute bottom-1/4 left-1/2 h-20 w-28 rounded bg-gradient-to-b from-ks-gray/15"
                 />
             </ScrollParallax>
         </div>
@@ -75,13 +75,29 @@ const TeamCard = (props) => {
 
 const AboutTeam = () => {
     const controls = useAnimation()
+    const [activeCard, setActiveCard] = useState(1)
 
+    // loop interval
     useEffect(() => {
-        controls.start({
-            x: "-100%",
-            transition: { repeat: Infinity, duration: 10, ease: "linear" },
-        })
-    }, [controls])
+        const interval = setInterval(() => {
+            setActiveCard((prev) => (prev + 1) % theTeam.length)
+        }, 4000)
+
+        return () => clearInterval(interval)
+    }, [theTeam.length])
+
+    // loop animation
+    // useEffect(() => {
+    //     controls.start({
+    //         x: "-40%",
+    //         transition: {
+    //             repeat: Infinity,
+    //             repeatType: "reverse",
+    //             duration: 10,
+    //             ease: "linear",
+    //         },
+    //     })
+    // }, [controls])
 
     return (
         <section
@@ -94,12 +110,28 @@ const AboutTeam = () => {
             <motion.div
                 // initial={{ x: 0 }}
                 // animate={controls}
-                className="grid lg:grid-cols-3 gap-4 w-max"
+                className="grid grid-cols-3 gap-4 w-max translate-x-80"
                 role="cards"
                 aria-label="About the members"
             >
                 {theTeam.map((member, index) => (
-                    <TeamCard key={index} {...member} />
+                    <motion.div
+                        key={index}
+                        // initial={{ translateX: 300 * 2 }}
+                        // animate={{ translateX: -250 * activeCard }}
+                        className={`transition-all duration-500 ${
+                            index === activeCard
+                                ? "opacity-100 blur-none"
+                                : "opacity-80 blur-sm"
+                        }`}
+                        style={{
+                            transform: `translateX(-${
+                                activeCard * 110
+                            }%) scale(${index === activeCard ? "1" : "0.95"})`,
+                        }}
+                    >
+                        <TeamCard {...member} />
+                    </motion.div>
                 ))}
             </motion.div>
         </section>
