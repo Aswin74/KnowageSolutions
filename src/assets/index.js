@@ -36,6 +36,14 @@ import Coimbatore from "./hero/Coimbatore.jpg"
 import Kerala from "./hero/Kerala.jpg"
 import Mangalore from "./hero/Mangalore.jpg"
 
+import Canada from "./hero/Country/Canada.webp"
+import Dubai from "./hero/Country/Dubai.png"
+import Georgia from "./hero/Country/Georgia.png"
+import Germany from "./hero/Country/Germany.webp"
+import Ireland from "./hero/Country/Ireland.webp"
+import Singapore from "./hero/Country/Singapore.svg"
+import UK from "./hero/Country/UK.webp"
+
 import Athul from "./about/Athul.jpeg"
 import Kiran from "./about/Kiran.jpg"
 import Nabeel from "./about/Nabeel.jpg"
@@ -73,6 +81,13 @@ export {
     Coimbatore,
     Kerala,
     Mangalore,
+    Canada,
+    Dubai,
+    Georgia,
+    Germany,
+    Ireland,
+    Singapore,
+    UK,
     Athul,
     Kiran,
     Nabeel,

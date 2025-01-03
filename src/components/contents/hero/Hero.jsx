@@ -11,6 +11,7 @@ import HeroInfo from "./HeroInfo"
 import HeroContact from "./HeroContact"
 import HeroCourses from "./HeroCourses"
 import Destinations from "./Destinations"
+import Abroad from "./Abroad"
 
 const Hero = () => {
     const viewRef = useRef(null)
@@ -104,18 +105,27 @@ const Hero = () => {
                 <HeroInfo />
             </section>
 
-            {/* Courses */}
-            <section role="courses" aria-label="" className="lg:my-5">
-                <HeroCourses />
+            {/* Abroad */}
+            <section
+                role="abroadInfo"
+                aria-label="Countries"
+                className="container py-8"
+            >
+                <Abroad />
             </section>
 
             {/* Destinations */}
             <section
                 role="destinations"
-                aria-label="Popular Destinations"
+                aria-label="Popular Destinations in India"
                 className="py-8 bg-ks-gray"
             >
                 <Destinations />
+            </section>
+
+            {/* Courses */}
+            <section role="courses" aria-label="" className="lg:my-5">
+                <HeroCourses />
             </section>
 
             {/* Contact */}
