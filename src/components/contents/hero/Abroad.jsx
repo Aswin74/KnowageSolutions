@@ -26,13 +26,14 @@ const Abroad = () => {
         >
             <Heading
                 title="Study Abroad"
+                text="We are here to help you, study at the top reputed universities."
                 className="mx-auto grid place-items-center w-full"
             />
 
             {/* Services */}
             <div
                 aria-label="abroad services"
-                className="grid gap-4 pt-4 pb-6 place-items-center md:grid-cols-2 lg:grid-cols-3"
+                className="grid gap-4 pb-6 place-items-center md:grid-cols-2 lg:grid-cols-3"
             >
                 {abroad[0].services.map((service, index) => (
                     <p key={index} className="text-left w-full md:text-lg">
@@ -68,6 +69,9 @@ const Abroad = () => {
                     )
                 )}
             </motion.div>
+            <p className="grid place-items-center caption pt-4 w-full lg:font-semibold">
+                UK | Canada | Germany | Georgia | Singapore | Dubai | Ireland
+            </p>
         </motion.div>
     )
 }
